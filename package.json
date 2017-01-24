@@ -1,0 +1,24 @@
+{
+  "name": "ecommerce-wishlist-app",
+  "version": "0.0.1",
+  "description": "An ecommerce wishlist app",
+  "main": "server.js",
+  "scripts": {
+    "clean:css": "rimraf css/main.css",
+    "build:css": "run-s clean:css _build:css",
+    "_build:css": "node-sass css/sass/main.scss css/main.css",
+    "watch:css": "run-s build:css _watch:css",
+    "_watch:css": "chokidar css/sass/**/* -c \"npm run build:css\""
+  },
+  "author": "Aaron McAvinue",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "chokidar-cli": "^1.2.0",
+    "cpr": "^2.0.0",
+    "mkdirp": "^0.5.1",
+    "node-sass": "^4.3.0",
+    "npm-run-all": "^4.0.1",
+    "rimraf": "^2.5.4"
+  },
+  "dependencies": {}
+}
