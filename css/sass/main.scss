@@ -3,7 +3,30 @@
   padding: 0;
 }
 
+body {
+  text-align: center;
+  font-size: 16px;
+}
+
 .container-fluid {
   padding-right: 0;
   padding-left: 0;
+}
+
+@import "hero-carousel";
+@import "testimonial-carousel";
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 2.25em;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.75em;
+  }
+  h2 {
+    font-size: 1.75em;
+  }
 }
