@@ -4,11 +4,61 @@
 
 body {
   text-align: center;
-  font-size: 16px; }
+  font-size: 17px;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5em;
+  color: #3c0404;
+  background: url("/M6962Xw-4.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover; }
+
+strong {
+  color: #330404;
+  font-size: 18px; }
 
 .container-fluid {
-  padding-right: 0;
-  padding-left: 0; }
+  padding: 0; }
+
+.container {
+  padding: 0; }
+
+.wrapper {
+  padding: 0 1em; }
+
+header {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 1em; }
+  header h1 {
+    margin-top: 0;
+    font-weight: 700; }
+
+h2 {
+  font-weight: 700; }
+
+.what-i-do {
+  text-align: left; }
+
+.what-i-do-list {
+  list-style-type: none; }
+
+.work-samples {
+  list-style-type: none; }
+  .work-samples .project {
+    color: #eae3e3;
+    padding: 1em;
+    border: 1px solid #b5b5b5;
+    margin: 1em 0; }
+    .work-samples .project .btn-primary {
+      background-color: #612323; }
+      .work-samples .project .btn-primary:hover {
+        background-color: #400404; }
+
+.contact {
+  margin-bottom: 3em; }
+  .contact .email {
+    color: #eae3e3; }
 
 #hero-carousel {
   height: 500px;
