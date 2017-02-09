@@ -5,16 +5,16 @@
 body {
   text-align: center;
   font-size: 17px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   line-height: 1.5em;
   color: #3c0404;
-  background: url("/M6962Xw-4.png");
+  background: url("/M6962Xw-5.png");
   background-attachment: fixed;
   background-position: center;
   background-size: cover; }
 
 strong {
-  color: #330404;
+  color: #7b0d0d;
   font-size: 18px; }
 
 .container-fluid {
@@ -26,13 +26,36 @@ strong {
 .wrapper {
   padding: 0 1em; }
 
+h1, h2 {
+  font-family: "Questrial", sans-serif; }
+
 header {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.4);
-  padding: 1em; }
-  header h1 {
-    margin-top: 0;
-    font-weight: 700; }
+  padding: 1em;
+  text-align: left; }
+  header .name {
+    display: inline; }
+    header .name h1 {
+      margin: 0 0.25em 0.25em 0;
+      font-weight: 700;
+      display: inline; }
+    header .name h4 {
+      margin: 0 1em 1em 0;
+      display: inline; }
+  header .social {
+    display: inline;
+    float: right;
+    white-space: nowrap;
+    position: relative;
+    top: 0.25em; }
+    header .social a {
+      font-size: 1.5em;
+      color: #3c0404;
+      text-decoration: none;
+      padding-right: 0.25em; }
+      header .social a:hover {
+        color: #612323; }
 
 h2 {
   font-weight: 700; }
@@ -92,9 +115,17 @@ h2 {
     min-width: 100%;
     height: 250px; }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   h1 {
-    font-size: 2.25em; } }
+    font-size: 2.25em; }
+  header .name h1 {
+    display: block; }
+  header .name h4 {
+    display: block; }
+  header .social {
+    display: block;
+    float: none;
+    position: static; } }
 
 @media (max-width: 500px) {
   h1 {
