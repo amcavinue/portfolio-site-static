@@ -22,8 +22,8 @@ body {
 }
 
 strong {
-  color: #7b0d0d;
-  font-size: 18px;
+  color: #efe0e0;
+  font-size: 1.05em;
 }
 
 .container-fluid {
@@ -89,6 +89,7 @@ h2 {
 
 .what-i-do {
   text-align: left;
+  font-size: 1.3em;
 }
 
 .what-i-do-list {
@@ -104,11 +105,28 @@ h2 {
     border: 1px solid #b5b5b5;
     margin: 1em 0;
     
-    .btn-primary {
+    .btn {
+      border: none;
+      font-size: 1.05em;
+      font-weight: 300;
+      display: block;
+    }
+    
+    .btn-github {
       background-color: $color-2;
+      margin-bottom: 0.5em;
       
       &:hover {
         background-color: #400404;
+      }
+    }
+    
+    .btn-site {
+      background-color: #e2d3d3;
+      color: $color-1;
+      
+      &:hover {
+        background-color: #dab1b1;
       }
     }
   }
