@@ -107,7 +107,7 @@ h2 {
     
     .img-responsive {
       height: 290px;
-      background-position: center;
+      background-position: top;
       background-size: cover;
     }
     
@@ -143,6 +143,7 @@ h2 {
   
   .email {
     color: #eae3e3;
+    font-size: 1.2em;
   }
 }
 
@@ -152,9 +153,16 @@ h2 {
 }
 
 .img-2 {
-  background-image: url('/content/ecommerce-wishlist-1.jpg');
+  background-image: url('/content/weather-app-1.jpg');
 }
 
+.img-3 {
+  background-image: url('/content/image-organizer-1.jpg');
+}
+
+.img-4 {
+  background-image: url('/content/local-movies-search-1.jpg');
+}
 
 @import "hero-carousel";
 @import "testimonial-carousel";

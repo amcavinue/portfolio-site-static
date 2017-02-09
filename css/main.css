@@ -76,7 +76,7 @@ h2 {
     margin: 1em 0; }
     .work-samples .project .img-responsive {
       height: 290px;
-      background-position: center;
+      background-position: top;
       background-size: cover; }
     .work-samples .project .btn {
       border: none;
@@ -97,14 +97,21 @@ h2 {
 .contact {
   margin-bottom: 3em; }
   .contact .email {
-    color: #eae3e3; }
+    color: #eae3e3;
+    font-size: 1.2em; }
 
 /*** Load the images into their containers here. ***/
 .img-1 {
   background-image: url("/content/ecommerce-wishlist-1.jpg"); }
 
 .img-2 {
-  background-image: url("/content/ecommerce-wishlist-1.jpg"); }
+  background-image: url("/content/weather-app-1.jpg"); }
+
+.img-3 {
+  background-image: url("/content/image-organizer-1.jpg"); }
+
+.img-4 {
+  background-image: url("/content/local-movies-search-1.jpg"); }
 
 #hero-carousel {
   height: 500px;
