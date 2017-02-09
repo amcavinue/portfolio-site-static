@@ -22,7 +22,7 @@ body {
 }
 
 strong {
-  color: #efe0e0;
+  color: #f9f0f0;
   font-size: 1.05em;
 }
 
@@ -105,6 +105,12 @@ h2 {
     border: 1px solid #b5b5b5;
     margin: 1em 0;
     
+    .img-responsive {
+      height: 290px;
+      background-position: center;
+      background-size: cover;
+    }
+    
     .btn {
       border: none;
       font-size: 1.05em;
@@ -122,11 +128,11 @@ h2 {
     }
     
     .btn-site {
-      background-color: #e2d3d3;
+      background-color: #efe3e3;
       color: $color-1;
       
       &:hover {
-        background-color: #dab1b1;
+        background-color: #e4cfcf;
       }
     }
   }
@@ -139,6 +145,16 @@ h2 {
     color: #eae3e3;
   }
 }
+
+/*** Load the images into their containers here. ***/
+.img-1 {
+  background-image: url('/content/ecommerce-wishlist-1.jpg');
+}
+
+.img-2 {
+  background-image: url('/content/ecommerce-wishlist-1.jpg');
+}
+
 
 @import "hero-carousel";
 @import "testimonial-carousel";
