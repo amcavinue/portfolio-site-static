@@ -113,6 +113,7 @@ h2 {
     
     .btn {
       border: none;
+      border-radius: 0;
       font-size: 1.05em;
       font-weight: 300;
       display: block;
@@ -153,7 +154,7 @@ h2 {
 }
 
 .img-2 {
-  background-image: url('/content/weather-app-1.jpg');
+  background-image: url('/content/weather-app-2.jpg');
 }
 
 .img-3 {
@@ -162,6 +163,14 @@ h2 {
 
 .img-4 {
   background-image: url('/content/local-movies-search-1.jpg');
+}
+
+.img-5 {
+  background-image: url('/content/hospice-maui-1.jpg');
+}
+
+.img-6 {
+  background-image: url('/content/rfl-1.jpg');
 }
 
 @import "hero-carousel";
