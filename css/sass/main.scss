@@ -1,8 +1,10 @@
 $font-1: 'Questrial', sans-serif;
 $font-2: 'Lato', sans-serif;
 
-$color-1: #3c0404;
-$color-2: #612323;
+$color-1: #3c0404; // Black
+$color-2: #612323; // Black-red (Off-black)
+$color-3: #eae3e3; // White
+$color-4: #562c2c; // Dark red
 
 * {
   margin: 0;
@@ -15,14 +17,14 @@ body {
   font-family: $font-2;
   line-height: 1.5em;
   color: $color-1;
-  background: url('/M6962Xw-5.png');
+  background: url('/M6962Xw-7.png');
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
 }
 
 strong {
-  color: #f9f0f0;
+  color: $color-1;
   font-size: 1.05em;
 }
 
@@ -77,7 +79,7 @@ header {
       padding-right: 0.25em;
       
       &:hover {
-        color: $color-2;
+        color: #923232;
       }
     }
   }
@@ -90,6 +92,7 @@ h2 {
 .what-i-do {
   text-align: left;
   font-size: 1.3em;
+  color: $color-1;
 }
 
 .what-i-do-list {
@@ -100,10 +103,11 @@ h2 {
   list-style-type: none;
   
   .project {
-    color: #eae3e3;
+    color: $color-3;
     padding: 1em;
-    border: 1px solid #b5b5b5;
+    border: 2px solid rgba(60, 4, 4, 0.56);
     margin: 1em 0;
+    background-color: rgba(60, 4, 4, 0.35);
     
     .img-responsive {
       height: 290px;
@@ -120,11 +124,11 @@ h2 {
     }
     
     .btn-github {
-      background-color: $color-2;
+      background-color: #3c1a1a;
       margin-bottom: 0.5em;
       
       &:hover {
-        background-color: #400404;
+        background-color: #6f4545;
       }
     }
     
@@ -133,18 +137,24 @@ h2 {
       color: $color-1;
       
       &:hover {
-        background-color: #e4cfcf;
+        background-color: #b5a3a3;
+        color: $color-3;
       }
     }
   }
 }
 
 .contact {
-  margin-bottom: 3em;
+    padding-bottom: 3em;
+    background-color: rgba(45, 2, 2, 0.5);
+    padding-top: 1em;
+    color: #eae3e3;
+    margin-top: 2em;
   
   .email {
-    color: #eae3e3;
+    color: rgb(129, 172, 255);
     font-size: 1.2em;
+    font-weight: bold;
   }
 }
 
