@@ -63,7 +63,7 @@ header {
 #intro {
   background: rgba(23, 65, 78, 0.5);
   text-align: center;
-  padding: 1em 0;
+  padding: 1em;
   color: #f1ebeb; }
   #intro #avatar {
     margin: 1em 0;
