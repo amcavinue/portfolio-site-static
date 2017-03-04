@@ -3,7 +3,7 @@ $font-2: 'Lato', sans-serif;
 
 $color-1: #3c0404; // Black
 $color-2: #612323; // Black-red (Off-black)
-$color-3: #eae3e3; // White
+$color-3: #f1ebeb; // White
 $color-4: #562c2c; // Dark red
 
 * {
@@ -24,7 +24,7 @@ body {
 }
 
 strong {
-  color: $color-1;
+  color: $color-3;
   font-size: 1.05em;
 }
 
@@ -33,7 +33,7 @@ strong {
 }
 
 .container {
-  padding: 0;
+  padding: 1em 0;
 }
 
 .wrapper {
@@ -42,6 +42,10 @@ strong {
 
 h1, h2 {
   font-family: $font-1;
+}
+
+h2 {
+  font-weight: 700;
 }
 
 header {
@@ -85,29 +89,39 @@ header {
   }
 }
 
-h2 {
-  font-weight: 700;
-}
-
-.what-i-do {
-  text-align: left;
-  font-size: 1.3em;
-  color: $color-1;
-}
-
-.what-i-do-list {
-  list-style-type: none;
+#intro {
+  background: rgba(23, 65, 78, 0.5);
+  text-align: center;
+  padding: 1em 0;
+  color: $color-3;
+  
+  #avatar {
+    margin: 1em 0;
+    border-radius: 50%;
+    max-width: 200px;
+  }
+  
+  .what-i-do {
+    text-align: left;
+    font-size: 1.3em;
+    color: $color-3;
+  }
 }
 
 .work-samples {
   list-style-type: none;
+  
+  h2 {
+    margin-bottom: 1em;
+    color: $color-3;
+  }
   
   .project {
     color: $color-3;
     padding: 1em;
     border: 2px solid rgba(60, 4, 4, 0.56);
     margin: 1em 0;
-    background-color: rgba(60, 4, 4, 0.35);
+    background-color: rgba(39, 12, 12, 0.35);
     
     .img-responsive {
       height: 290px;
@@ -121,23 +135,30 @@ h2 {
       font-size: 1.05em;
       font-weight: 300;
       display: block;
+      
+      /* Rounded corners */
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px; /* future proofing */
+      -khtml-border-radius: 10px; /* for old Konqueror browsers */
     }
     
     .btn-github {
-      background-color: #3c1a1a;
+      background-color: transparent;
       margin-bottom: 0.5em;
+      border: #3c1a1a solid 2px;
       
       &:hover {
-        background-color: #6f4545;
+        background-color: rgba(111, 69, 69, 0.25);
       }
     }
     
     .btn-site {
-      background-color: #efe3e3;
-      color: $color-1;
+      background-color: transparent;
+      border: #efe3e3 solid 2px;
       
       &:hover {
-        background-color: #b5a3a3;
+        background-color: rgba(197, 170, 170, 0.3);
         color: $color-3;
       }
     }
