@@ -103,9 +103,13 @@ header {
   }
   
   .what-i-do {
-    text-align: left;
+    text-align: center;
     font-size: 1.3em;
     color: $color-3;
+    
+    #blurb {
+      text-align: left;
+    }
   }
 }
 

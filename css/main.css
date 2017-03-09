@@ -71,9 +71,11 @@ header {
     border-radius: 50%;
     max-width: 200px; }
   #intro .what-i-do {
-    text-align: left;
+    text-align: center;
     font-size: 1.3em;
     color: #f1ebeb; }
+    #intro .what-i-do #blurb {
+      text-align: left; }
 
 .work-samples {
   list-style-type: none; }
