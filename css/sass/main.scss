@@ -124,7 +124,6 @@ header {
   .project {
     color: $color-3;
     padding: 1em;
-    border: 2px solid rgba(60, 4, 4, 0.56);
     margin: 1em 0;
     background-color: rgba(39, 12, 12, 0.25);
     
@@ -151,11 +150,12 @@ header {
     .btn-github {
       background-color: transparent;
       margin-bottom: 0.5em;
-      border: #3c1a1a solid 2px;
-      color: #000;
+      border: #9dffeb solid 2px;
+      color: #9dffeb;
       
       &:hover {
-        background-color: rgba(111, 69, 69, 0.25);
+        background-color: #9dffeb;
+        color: $color-1;
       }
     }
     
@@ -164,8 +164,8 @@ header {
       border: #efe3e3 solid 2px;
       
       &:hover {
-        background-color: rgba(197, 170, 170, 0.3);
-        color: $color-3;
+        background-color: #fff;
+        color: $color-1;
       }
     }
   }
