@@ -105,7 +105,8 @@ header {
     .work-samples .project .btn-github {
       background-color: transparent;
       margin-bottom: 0.5em;
-      border: #3c1a1a solid 2px; }
+      border: #3c1a1a solid 2px;
+      color: #000; }
       .work-samples .project .btn-github:hover {
         background-color: rgba(111, 69, 69, 0.25); }
     .work-samples .project .btn-site {
