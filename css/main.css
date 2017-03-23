@@ -148,6 +148,46 @@ header {
 .img-6 {
   background-image: url("/content/rfl-1.jpg"); }
 
+#filters {
+  margin-bottom: 1em; }
+  #filters fieldset {
+    margin-bottom: 1em; }
+  #filters .form-group {
+    margin-bottom: 1em; }
+  #filters #toggle-arrow {
+    width: 3em;
+    height: 3em;
+    display: block;
+    margin: 0 auto;
+    opacity: 0.5;
+    cursor: pointer; }
+    #filters #toggle-arrow:hover {
+      opacity: 1; }
+
+.tag-list-container {
+  width: 100%;
+  max-height: 10em;
+  overflow: auto;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  background-color: #efefef; }
+  .tag-list-container li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 1em; }
+    .tag-list-container li .checkbox {
+      display: inline;
+      visibility: hidden;
+      width: 0; }
+    .tag-list-container li .check-label {
+      padding: 0.25em 1em;
+      border-radius: 0.5em;
+      font-weight: 500;
+      cursor: pointer; }
+    .tag-list-container li .checkbox:checked + .check-label {
+      background-color: #ccc;
+      color: #444; }
+
 #hero-carousel {
   height: 500px;
   /* Since positioning the image, we need to help out the caption */

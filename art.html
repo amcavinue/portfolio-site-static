@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet"> 
+    <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Aaron McAvinue | Artworks</title>
+</head>
+<body>
+  <header>
+    <div class="name">
+      <h1>Aaron McAvinue</h1>
+      <h4>Digital Artist</h4>
+    </div>
+    
+    <div class="social">
+      <a href="https://www.twitter.com/aaronmcavinue" target="_blank" class="socicon-twitter"></a>
+      <a href="https://www.instagram.com/aaronmcavinue" target="_blank" class="socicon-instagram"></a>
+      <a href="https://www.linkedin.com/in/amcavinue" target="_blank" class="socicon-linkedin"></a>
+      <a href="https://www.github.com/amcavinue" target="_blank" class="socicon-github"></a>
+    </div>
+  </header>
+  
+  <section id="art-intro">
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+        <h2>I've drawn and painted my whole life. Recently, I've transitioned into working digitally. Here is a selection of my work over the years.</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-8 col-md-offset-2">
+        <form id="filter-form" action="" method="">
+          <legend>Filters</legend>
+          <fieldset id="filters-fieldset">
+            <div class="form-group">
+                <label for="name">Image Contains</label>
+                <input type="text" id="contains" name="contains">
+            </div>
+            
+            <label for="tag-list">Tags</label>
+            <div class="tag-list-container">
+                  <ul class="tag-list" id="tag-list"><li><input id="scene-0" type="checkbox" class="checkbox" name="scene"><label class="check-label" for="scene-0">scene</label></li><li><input id="water-0" type="checkbox" class="checkbox" name="water"><label class="check-label" for="water-0">water</label></li><li><input id="river-0" type="checkbox" class="checkbox" name="river"><label class="check-label" for="river-0">river</label></li><li><input id="valley-0" type="checkbox" class="checkbox" name="valley"><label class="check-label" for="valley-0">valley</label></li><li><input id="snow-0" type="checkbox" class="checkbox" name="snow"><label class="check-label" for="snow-0">snow</label></li><li><input id="area-0" type="checkbox" class="checkbox" name="area"><label class="check-label" for="area-0">area</label></li><li><input id="trees-0" type="checkbox" class="checkbox" name="trees"><label class="check-label" for="trees-0">trees</label></li><li><input id="tiger-0" type="checkbox" class="checkbox" name="tiger"><label class="check-label" for="tiger-0">tiger</label></li></ul>
+            </div>
+            <input class="btn btn-primary" type="submit" value="Filter" name="submit">
+          </fieldset>
+          <img id="toggle-arrow" class="up-arrow" src="up-arrow.png">
+        </form>
+      </div>
+    </div>
+  </section>
+  
+  <div class="container-fluid wrapper">
+    <section class="container work-samples">
+      <h2>Work Samples</h2>
+      
+      <!-- Project Template-->
+      <!-- <div class="row project">
+          <div class="col-md-7 img-responsive img-1"></div>
+          <div class="col-md-5">
+              <h3>Heading</h3>
+              <h4>Subheading</h4>
+              <p>Lorem ipsum description...</p>
+              <a target="_blank" class="btn btn-primary btn-github" href="#"><span class="socicon-github"></span>&nbsp;&nbsp;&nbsp;View Source</a>
+              <a target="_blank" class="btn btn-primary btn-site" href="#"><span class="glyphicon glyphicon-globe"></span>&nbsp;&nbsp;&nbsp;View Site</a>
+          </div>
+      </div> -->
+      <!-- /Project Template -->
+      
+      <div class="row project">
+          <div class="col-md-7 img-responsive img-1"></div>
+          <div class="col-md-5">
+              <h3>Ecommerce Wishlist</h3>
+              <p>A well-engineered app that lets you create a custom wishlist from your favorite products.</p>
+              <a target="_blank" class="btn btn-primary btn-github" href="https://github.com/amcavinue/ecommerce-wishlist"><span class="socicon-github"></span>&nbsp;&nbsp;&nbsp;View Source</a>
+              <a target="_blank" class="btn btn-primary btn-site" href="https://powerful-island-41601.herokuapp.com/#/"><span class="glyphicon glyphicon-globe"></span>&nbsp;&nbsp;&nbsp;View Site</a>
+          </div>
+      </div>
+      
+      <div class="row project">
+          <div class="col-md-7 img-responsive img-2"></div>
+          <div class="col-md-5">
+              <h3>Weather App</h3>
+              <p>An app for everyone that displays your local weather, built in a maintainable and scalable way.</p>
+              <a target="_blank" class="btn btn-primary btn-github" href="https://github.com/amcavinue/weather-app"><span class="socicon-github"></span>&nbsp;&nbsp;&nbsp;View Source</a>
+              <a target="_blank" class="btn btn-primary btn-site" href="http://intense-shelf-90505.herokuapp.com/"><span class="glyphicon glyphicon-globe"></span>&nbsp;&nbsp;&nbsp;View Site</a>
+          </div>
+      </div>
+      
+      <div class="row project">
+          <div class="col-md-7 img-responsive img-3"></div>
+          <div class="col-md-5">
+              <h3>Image Organizer</h3>
+              <p>An app that stores images, built with a tag system for mining unrelated images for creative inspiration.</p>
+              <a target="_blank" class="btn btn-primary btn-github" href="https://github.com/amcavinue/image-organizer"><span class="socicon-github"></span>&nbsp;&nbsp;&nbsp;View Source</a>
+              <a target="_blank" class="btn btn-primary btn-site" href="https://still-temple-63836.herokuapp.com/"><span class="glyphicon glyphicon-globe"></span>&nbsp;&nbsp;&nbsp;View Site</a>
+          </div>
+      </div>
+      
+      <div class="row project">
+          <div class="col-md-7 img-responsive img-4"></div>
+          <div class="col-md-5">
+              <h3>Local Movies Search</h3>
+              <p>Local Movies Search is an app that helps users find movies playing in theatres near them.</p>
+              <a target="_blank" class="btn btn-primary btn-github" href="https://github.com/amcavinue/local-movies-search"><span class="socicon-github"></span>&nbsp;&nbsp;&nbsp;View Source</a>
+              <a target="_blank" class="btn btn-primary btn-site" href="http://thinkful.aaronmcavinue.com/local-movies-search/"><span class="glyphicon glyphicon-globe"></span>&nbsp;&nbsp;&nbsp;View Site</a>
+          </div>
+      </div>
+      
+      <div class="row project">
+          <div class="col-md-7 img-responsive img-5"></div>
+          <div class="col-md-5">
+              <h3>Hospice Maui</h3>
+              <h4>Website Update</h4>
+              <p>I did an overhaul to the Hospice Maui website, providing them with development work and design input.</p>
+              <a target="_blank" class="btn btn-primary btn-site" href="http://hospicemaui.org/"><span class="glyphicon glyphicon-globe"></span>&nbsp;&nbsp;&nbsp;View Site</a>
+          </div>
+      </div>
+      
+      <div class="row project">
+          <div class="col-md-7 img-responsive img-6"></div>
+          <div class="col-md-5">
+              <h3>Rich Functional List</h3>
+              <p>RFL is a kanban-style plugin that features nested cards.</p>
+              <a target="_blank" class="btn btn-primary btn-github" href="https://github.com/amcavinue/Rich-Functional-List"><span class="socicon-github"></span>&nbsp;&nbsp;&nbsp;View Source</a>
+              <a target="_blank" class="btn btn-primary btn-site" href="http://amcavinue.github.io/Rich-Functional-List/"><span class="glyphicon glyphicon-globe"></span>&nbsp;&nbsp;&nbsp;View Site</a>
+          </div>
+      </div>
+      
+    </section>
+  </div>
+  
+  <footer class="contact">
+    <h2>Let's Work Together!</h2>
+    <p>
+        Shoot me an email at: <a class="email" href="mailto:aaronmcavinue@gmail.com">aaronmcavinue@gmail.com</a>
+    <br />
+        I look forward to hearing from you and helping meet your needs!
+    </p>
+  </footer>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
