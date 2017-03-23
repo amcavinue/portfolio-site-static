@@ -148,20 +148,20 @@ header {
 .img-6 {
   background-image: url("/content/rfl-1.jpg"); }
 
-#filters {
+#filter-form {
   margin-bottom: 1em; }
-  #filters fieldset {
+  #filter-form fieldset {
     margin-bottom: 1em; }
-  #filters .form-group {
+  #filter-form .form-group {
     margin-bottom: 1em; }
-  #filters #toggle-arrow {
+  #filter-form #toggle-arrow {
     width: 3em;
     height: 3em;
     display: block;
     margin: 0 auto;
     opacity: 0.5;
     cursor: pointer; }
-    #filters #toggle-arrow:hover {
+    #filter-form #toggle-arrow:hover {
       opacity: 1; }
 
 .tag-list-container {
