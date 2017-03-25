@@ -15,12 +15,12 @@ h1, h2 {
 }
 
 h2, h3 {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 header {
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 1em;
   text-align: left;
   
@@ -29,7 +29,7 @@ header {
     
     h1 {
       margin: 0 0.25em 0.25em 0;
-      font-weight: 700;
+      font-weight: 300;
       display: inline;
     }
     
@@ -60,10 +60,14 @@ header {
 }
 
 #intro {
-  background: rgba(23, 65, 78, 0.5);
-  text-align: center;
-  padding: 1em;
+  background: rgba(39, 39, 39, 0.8);
+  text-align: left;
+  padding: 5em 1em;
   color: $color-3;
+  
+  h2 {
+    text-align: left;
+  }
   
   #avatar {
     margin: 1em 0;
@@ -78,6 +82,7 @@ header {
     
     #blurb {
       text-align: left;
+      font-size: 0.8em;
     }
   }
 }
@@ -87,14 +92,14 @@ header {
   
   h2 {
     margin-bottom: 1em;
-    color: $color-3;
+    color: rgba(21, 20, 20, 1);
   }
   
   .project {
     color: $color-3;
     padding: 1em;
     margin: 1em 0;
-    background-color: rgba(39, 12, 12, 0.25);
+    background-color: rgba(51, 45, 45, 0.75);
     
     .img-responsive {
       height: 290px;
@@ -119,7 +124,7 @@ header {
     .btn-github {
       background-color: transparent;
       margin-bottom: 0.5em;
-      border: #9dffeb solid 2px;
+      border: #9dffeb solid 1px;
       color: #9dffeb;
       
       &:hover {
@@ -130,7 +135,7 @@ header {
     
     .btn-site {
       background-color: transparent;
-      border: #efe3e3 solid 2px;
+      border: #efe3e3 solid 1px;
       
       &:hover {
         background-color: #fff;
@@ -141,7 +146,7 @@ header {
 }
 
 .contact {
-    background-color: rgba(45, 2, 2, 0.5);
+    background-color: rgba(39, 39, 39, 0.8);
     padding: 1em 1em 3em 1em;
     color: #eae3e3;
     margin-top: 2em;

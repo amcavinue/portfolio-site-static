@@ -5,6 +5,7 @@
 body {
   text-align: center;
   font-size: 17px;
+  font-weight: 300;
   font-family: "Lato", sans-serif;
   line-height: 1.5em;
   color: #3c0404;
@@ -17,7 +18,11 @@ body {
 strong {
   color: #fff;
   font-size: 1.1em;
+  font-weight: 500;
   text-decoration: underline; }
+
+hr {
+  width: 20%; }
 
 .container-fluid {
   padding: 0; }
@@ -32,18 +37,18 @@ h1, h2 {
   font-family: "Questrial", sans-serif; }
 
 h2, h3 {
-  font-weight: 700; }
+  font-weight: 500; }
 
 header {
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 1em;
   text-align: left; }
   header .name {
     display: inline; }
     header .name h1 {
       margin: 0 0.25em 0.25em 0;
-      font-weight: 700;
+      font-weight: 300;
       display: inline; }
     header .name h4 {
       margin: 0 1em 1em 0;
@@ -63,10 +68,12 @@ header {
         color: #923232; }
 
 #intro {
-  background: rgba(23, 65, 78, 0.5);
-  text-align: center;
-  padding: 1em;
-  color: #f1ebeb; }
+  background: rgba(39, 39, 39, 0.8);
+  text-align: left;
+  padding: 5em 1em;
+  color: #fff; }
+  #intro h2 {
+    text-align: left; }
   #intro #avatar {
     margin: 1em 0;
     border-radius: 50%;
@@ -74,20 +81,21 @@ header {
   #intro .what-i-do {
     text-align: center;
     font-size: 1.3em;
-    color: #f1ebeb; }
+    color: #fff; }
     #intro .what-i-do #blurb {
-      text-align: left; }
+      text-align: left;
+      font-size: 0.8em; }
 
 .work-samples {
   list-style-type: none; }
   .work-samples h2 {
     margin-bottom: 1em;
-    color: #f1ebeb; }
+    color: #151414; }
   .work-samples .project {
-    color: #f1ebeb;
+    color: #fff;
     padding: 1em;
     margin: 1em 0;
-    background-color: rgba(39, 12, 12, 0.25); }
+    background-color: rgba(51, 45, 45, 0.75); }
     .work-samples .project .img-responsive {
       height: 290px;
       background-position: top;
@@ -108,20 +116,20 @@ header {
     .work-samples .project .btn-github {
       background-color: transparent;
       margin-bottom: 0.5em;
-      border: #9dffeb solid 2px;
+      border: #9dffeb solid 1px;
       color: #9dffeb; }
       .work-samples .project .btn-github:hover {
         background-color: #9dffeb;
         color: #3c0404; }
     .work-samples .project .btn-site {
       background-color: transparent;
-      border: #efe3e3 solid 2px; }
+      border: #efe3e3 solid 1px; }
       .work-samples .project .btn-site:hover {
         background-color: #fff;
         color: #3c0404; }
 
 .contact {
-  background-color: rgba(45, 2, 2, 0.5);
+  background-color: rgba(39, 39, 39, 0.8);
   padding: 1em 1em 3em 1em;
   color: #eae3e3;
   margin-top: 2em; }
@@ -247,8 +255,12 @@ header {
   header .social {
     display: block;
     float: none;
-    position: static; } }
+    position: static; }
+  #intro {
+    padding: 3em 1em; } }
 
 @media (max-width: 500px) {
   h1 {
-    font-size: 1.75em; } }
+    font-size: 1.75em; }
+  #intro {
+    padding: 1em; } }

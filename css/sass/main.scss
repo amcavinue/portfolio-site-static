@@ -3,7 +3,7 @@ $font-2: 'Lato', sans-serif;
 
 $color-1: #3c0404; // Black
 $color-2: #612323; // Black-red (Off-black)
-$color-3: #f1ebeb; // White
+$color-3: #fff; // White
 $color-4: #562c2c; // Dark red
 
 * {
@@ -14,6 +14,7 @@ $color-4: #562c2c; // Dark red
 body {
   text-align: center;
   font-size: 17px;
+  font-weight: 300;
   font-family: $font-2;
   line-height: 1.5em;
   color: $color-1;
@@ -27,7 +28,12 @@ body {
 strong {
   color: #fff;
   font-size: 1.1em;
+  font-weight: 500;
   text-decoration: underline;
+}
+
+hr {
+  width: 20%;
 }
 
 @import "development";
@@ -57,10 +63,18 @@ strong {
       position: static;
     }
   }
+  
+  #intro {
+    padding: 3em 1em;
+  }
 }
 
 @media (max-width: 500px) {
   h1 {
     font-size: 1.75em;
+  }
+  
+  #intro {
+    padding: 1em;
   }
 }
