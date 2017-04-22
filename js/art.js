@@ -112,7 +112,6 @@ function renderCard(imgData) {
 $(function() {
   // Load the images.
   $.getJSON("art-data.json", function(json) {
-    console.log(json);
     $('#js-render-images').append(renderImages(json));
   });
   

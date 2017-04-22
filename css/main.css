@@ -133,7 +133,7 @@ header {
 .contact {
   background-color: rgba(39, 39, 39, 0.8);
   padding: 1em 1em 3em 1em;
-  color: #eae3e3;
+  color: #fff;
   margin-top: 2em; }
   .contact .email {
     color: #81acff;
@@ -166,52 +166,58 @@ header {
   font-family: "Lato", sans-serif;
   line-height: 1.5em;
   color: #3c0404;
-  background: url("/M6962Xw-5-bw.png");
+  background: #eff3f5;
+  /*background: url('/M6962Xw-5-bw.png');
   background-attachment: fixed;
   background-position: center;
-  background-size: cover;
+  background-size: cover;*/
   overflow-x: hidden; }
 
-#filter-form {
-  margin-bottom: 1em;
-  padding: 0 0.5em; }
-  #filter-form fieldset {
-    margin-bottom: 1em; }
-  #filter-form .form-group {
-    margin-bottom: 1em; }
-  #filter-form #toggle-arrow {
-    width: 3em;
-    height: 3em;
-    display: block;
-    margin: 0 auto;
-    opacity: 0.5;
-    cursor: pointer; }
-    #filter-form #toggle-arrow:hover {
-      opacity: 1; }
-
-.tag-list-container {
-  width: 100%;
-  max-height: 10em;
-  overflow: auto;
-  margin-bottom: 1em;
-  padding: 0.5em;
-  background-color: #efefef; }
-  .tag-list-container li {
-    display: inline;
-    list-style-type: none;
-    padding-right: 1em; }
-    .tag-list-container li .checkbox {
-      display: inline;
-      visibility: hidden;
-      width: 0; }
-    .tag-list-container li .check-label {
-      padding: 0.25em 1em;
-      border-radius: 0.5em;
-      font-weight: 500;
+#art-intro {
+  background-color: rgba(45, 45, 45, 0.8);
+  color: #fff; }
+  #art-intro legend {
+    color: #fff; }
+  #art-intro #filter-form {
+    margin-bottom: 1em;
+    padding: 0 0.5em; }
+    #art-intro #filter-form fieldset {
+      margin-bottom: 1em; }
+    #art-intro #filter-form .form-group {
+      margin-bottom: 1em; }
+    #art-intro #filter-form #toggle-arrow {
+      width: 3em;
+      height: 3em;
+      display: block;
+      margin: 0 auto;
+      opacity: 0.5;
       cursor: pointer; }
-    .tag-list-container li .checkbox:checked + .check-label {
-      background-color: #ccc;
-      color: #444; }
+      #art-intro #filter-form #toggle-arrow:hover {
+        opacity: 1; }
+  #art-intro .tag-list-container {
+    width: 100%;
+    max-height: 10em;
+    overflow: auto;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    background-color: #efefef; }
+    #art-intro .tag-list-container li {
+      display: inline;
+      list-style-type: none;
+      padding-right: 1em;
+      color: #3c0404; }
+      #art-intro .tag-list-container li .checkbox {
+        display: inline;
+        visibility: hidden;
+        width: 0; }
+      #art-intro .tag-list-container li .check-label {
+        padding: 0.25em 1em;
+        border-radius: 0.5em;
+        font-weight: 500;
+        cursor: pointer; }
+      #art-intro .tag-list-container li .checkbox:checked + .check-label {
+        background-color: #ccc;
+        color: #444; }
 
 .image-card {
   padding: 1em;
