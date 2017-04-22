@@ -82,13 +82,15 @@
   }
 }
 
+#main-cards h4 {
+  margin-bottom: 0;
+}
+
 .image-card {
-    padding: 1em;
+    margin-top: 1em;
     text-align: center;
     
     .card-container {
-        padding: 1em;
-        
         .img-container {
             .img-helper {
                 display: inline-block;
