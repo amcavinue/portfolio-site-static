@@ -1,5 +1,20 @@
+#art-body {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 300;
+  font-family: $font-2;
+  line-height: 1.5em;
+  color: $color-1;
+  background: url('/M6962Xw-5-bw.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
 #filter-form {
     margin-bottom: 1em;
+    padding: 0 0.5em;
     
     fieldset {
         margin-bottom: 1em;

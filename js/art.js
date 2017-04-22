@@ -1,5 +1,23 @@
 var imageData, tags, imageTagAssociative;
 
+function renderImages(images) {
+  var imageHtml = "";
+  images.forEach(function(image, i, arr) {
+    imageHtml += 
+        '<div class="col-xs-12 image-card">' +
+          '<div class="card-container">' +
+            '<div class="img-container" data-description="' + image.filename + '">' +
+              '<span class="img-helper"></span>' +
+              '<img src="' + image.src + '">' +
+            '</div>' +
+            '<h4>' + image.name + '</h4>' +
+            (image.media ? '<span>' + image.media + '</span>, ' : '') + (image.year ? '<span>' + image.year + '</span>' : '') +
+          '</div>' +
+        '</div>';
+  });
+  return imageHtml;
+}
+
 function findKeywords(contains, tags, imageData) {
     // Sanitize the input.
     contains = contains.trim().toLowerCase().split(/[^a-zA-Z0-9']+/ig).filter(function(el, i, self) { return (el.length !== 0) && (i === self.indexOf(el)); });
@@ -92,6 +110,13 @@ function renderCard(imgData) {
 }
 
 $(function() {
+  // Load the images.
+  $.getJSON("art-data.json", function(json) {
+    console.log(json);
+    $('#js-render-images').append(renderImages(json));
+  });
+  
+  
   // Toggle the filters form.
   $('#toggle-arrow').on('click', function() {
       if (!$(this).hasClass('up-arrow')) {

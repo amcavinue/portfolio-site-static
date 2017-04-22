@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Great Title",
+    "filename": "art-1",
+    "src": "content/art/art-1.jpg",
+    "media": "Digital Mixed Media",
+    "year": "2017"
+  },
+  {
+    "name": "Great Title 2",
+    "filename": "art-2",
+    "src": "content/art/art-2.jpg",
+    "media": "",
+    "year": "2017"
+  },
+  {
+    "name": "Great Title 3",
+    "filename": "art-3",
+    "src": "content/art/art-3.jpg",
+    "media": "Digital Mixed Media",
+    "year": ""
+  }
+]

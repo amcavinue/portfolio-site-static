@@ -159,8 +159,22 @@ header {
 .img-6 {
   background-image: url("/content/development/rfl-1.jpg"); }
 
+#art-body {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 300;
+  font-family: "Lato", sans-serif;
+  line-height: 1.5em;
+  color: #3c0404;
+  background: url("/M6962Xw-5-bw.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  overflow-x: hidden; }
+
 #filter-form {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  padding: 0 0.5em; }
   #filter-form fieldset {
     margin-bottom: 1em; }
   #filter-form .form-group {

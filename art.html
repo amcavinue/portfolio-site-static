@@ -12,7 +12,7 @@
 
     <title>Aaron McAvinue | Artworks</title>
 </head>
-<body>
+<body id="art-body">
   <header>
     <div class="name">
       <h1>Aaron McAvinue</h1>
@@ -29,14 +29,9 @@
   
   <section id="art-intro">
     <div class="row">
-      <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-        <h2>I've drawn and painted my whole life. Recently, I've transitioned into working digitally. Here is a selection of my work over the years.</h2>
-      </div>
-    </div>
-    <div class="row">
       <div class="col-xs-12 col-md-8 col-md-offset-2">
         <form id="filter-form" action="" method="">
-          <legend>Filters</legend>
+          <legend><h2>Filters</h2></legend>
           <fieldset id="filters-fieldset">
             <div class="form-group">
                 <label for="name">Image Contains</label>
@@ -57,64 +52,8 @@
   
   <div class="container-fluid wrapper">
     <section class="container work-samples" id="main-cards">
-      <div class="row">
-        <!-- Artwork Template-->
-          <!--
-          
-          -->
-        <!-- /Artwork Template -->
-        
-        <div class="col-xs-12 image-card">
-          <div class="card-container">
-            <div 
-              class="img-container" 
-              data-description="art-1" 
-              >
-              <span class="img-helper"></span>
-              <img src="content/art/art-1.jpg">
-            </div>
-            <br>
-            <h4>art-1</h4>
-            <span>Digital Mixed Media</span>
-            <br />
-            <span>2017</span>
-          </div>
-        </div>
-        
-        <div class="col-xs-12 image-card">
-          <div class="card-container">
-            <div 
-              class="img-container" 
-              data-description="art-2" 
-              >
-              <span class="img-helper"></span>
-              <img src="content/art/art-2.jpg">
-            </div>
-            <br>
-            <h4>art-2</h4>
-            <span>Digital Mixed Media</span>
-            <br />
-            <span>2017</span>
-          </div>
-        </div>
-        
-        <div class="col-xs-12 image-card">
-          <div class="card-container">
-            <div 
-              class="img-container" 
-              data-description="art-3" 
-              >
-              <span class="img-helper"></span>
-              <img src="content/art/art-3.jpg">
-            </div>
-            <br>
-            <h4>art-3</h4>
-            <span>Digital Mixed Media</span>
-            <br />
-            <span>2017</span>
-          </div>
-        </div>
-        
+      <div class="row" id="js-render-images">
+        <!-- Images render here -->
       </div>
     </section>
   </div>
