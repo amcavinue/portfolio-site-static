@@ -97,7 +97,7 @@ header {
     margin: 1em 0;
     background-color: rgba(51, 45, 45, 0.75); }
     .work-samples .project hr {
-      margin: 2em auto; }
+      margin: 1.5em auto; }
     .work-samples .project .img-responsive {
       height: 290px;
       background-position: top;
