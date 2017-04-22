@@ -3,54 +3,37 @@ function renderImages(images) {
   images.forEach(function(image, i, arr) {
     imageHtml +=
       '<div class="col-xs-12 image-card">' +
-      '<div class="card-container">' +
-      '<div class="img-container" data-description="' + image.filename + '">' +
-      '<span class="img-helper"></span>' +
-      '<img src="' + image.src + '">' +
-      '</div>' +
-      '<h4>' + image.name + '</h4>' +
-      (image.media ? '<span>' + image.media + '</span>' : '') +
-      (image.media && image.year ? ', ' : '') +
-      (image.year ? '<span>' + image.year + '</span>' : '') +
-      '</div>' +
+        '<div class="card-container">' +
+          '<div class="img-container" data-description="' + image.filename + '">' +
+            '<span class="img-helper"></span>' +
+            '<img src="' + image.src + '">' +
+          '</div>' +
+          '<h4>' + image.name + '</h4>' +
+          (image.media ? '<span>' + image.media + '</span>' : '') +
+          (image.media && image.year ? ', ' : '') +
+          (image.year ? '<span>' + image.year + '</span>' : '') +
+        '</div>' +
       '</div>';
   });
   return imageHtml;
 }
 
-function findKeywords(contains, imageData) {
-  debugger;
+function findKeywords(keywords, imageData) {
   // Return any images that match any of the keywords in any of their properties.
   // http://stackoverflow.com/questions/8517089/js-search-in-object-values
   var results = [];
 
   imageData.forEach(function(image, i) {
+    imageLoop:
     for (var key in image) {
-      // skip loop if the property is from prototype
-      if (!validation_messages.hasOwnProperty(key)) continue;
-      
-      
-    }
-  });
-
-
-
-  /*// Look in each image object.
-  for (var i = 0; i < imageData.length; i++) {
-    // Look in every property of that image.
-    imageLoop: 
-    for (var key in imageData[i]) {
-      // For each property, look for all the keywords.
-      for (var j = 0; j < contains.length; j++) {
-        // If the keyword is in the property add the index to the results
-        // and go to the next image.
-        if (String(imageData[i][key]).toLowerCase().indexOf(contains[j]) !== -1) {
-          results.push(imageData[i]._id);
+      for (var j = 0; j < keywords.length; j++) {
+        if (image[key].toLowerCase().indexOf(keywords[j]) !== -1) {
+          results.push(image);
           break imageLoop;
         }
       }
     }
-  }*/
+  });
   
   // Remove duplicates from the results.
   results = results.filter(function(elem, index, self) {
@@ -86,44 +69,31 @@ $(function() {
   $('#filter-form').submit(function(e) {
     e.preventDefault();
 
-    // Get the inputs from the UI.
-    var inputs = $(this).serializeArray();
+    var inputs = $(this).serializeArray(); // Get the inputs from the UI.
+    var keywords = [];
     
-    // Get the keyword search from the input.
-    var contains = (inputs[0]['name'] === 'contains') ? inputs[0]['value'] : null; // If the first object is the 'contains' input (it should be), return the value of the input.
-    contains = contains.trim().toLowerCase().split(/[^a-zA-Z0-9']+/ig).filter(function(el, i, self) { return (el.length !== 0) && (i === self.indexOf(el)); }); // Sanitize contains.
-    inputs.splice(0, 1);
-
-    // Extract just the tag names from the form inputs.
-    var formTags = [];
+    // Sanitize the inputs.
     inputs.forEach(function(input, i) {
-      formTags.push(input['name']);
+      if (input.name === "contains") {
+        input = input.value;
+      } else {
+        input = input.name;
+      }
+      input = input.trim().toLowerCase().split(/[^a-zA-Z0-9']+/ig).filter(function(el, i, self) { return (el.length !== 0) && (i === self.indexOf(el)); }); // Sanitize contains.
+      keywords = keywords.concat(input);
     });
     
-    // Remove any duplicate tags from contains.
-    contains = contains.filter(function(val) {
-      return formTags.indexOf(val) == -1;
-    });
-    contains = contains.concat(formTags);
-
-    var results = findKeywords(contains, imageData);
-
-    // Replace image _ids with image objects.
-    var resultImages = [];
-    results.forEach(function(item, index) {
-      var image = imageData.find(function(image) {
-        return image._id === item;
-      });
-
-      if (image) {
-        resultImages.push(image);
-      }
+    // Remove any duplicates.
+    keywords = keywords.filter(function(input, i, arr) {
+      return arr.indexOf(input) == i;
     });
 
-    /*if (results.length !== 0) {
-        renderSelectCards(resultImages);
+    var results = findKeywords(keywords, imageData);
+
+    if (results.length !== 0) {
+      $('#js-render-images').empty().append(renderImages(results));
     } else {
-        renderCards(imageData);
-    }*/
+      $('#js-render-images').empty().append(renderImages(imageData));
+    }
   });
 });
