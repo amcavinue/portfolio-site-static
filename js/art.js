@@ -1,5 +1,3 @@
-var imageData, tags, imageTagAssociative;
-
 function renderImages(images) {
   var imageHtml = "";
   images.forEach(function(image, i, arr) {
@@ -21,9 +19,7 @@ function renderImages(images) {
 }
 
 function findKeywords(contains, tags, imageData) {
-    // Sanitize the input.
-    contains = contains.trim().toLowerCase().split(/[^a-zA-Z0-9']+/ig).filter(function(el, i, self) { return (el.length !== 0) && (i === self.indexOf(el)); });
-    
+    debugger;
     // Remove any duplicate tags from contains.
     contains = contains.filter(function(val) {
         return tags.indexOf(val) == -1;
@@ -35,14 +31,11 @@ function findKeywords(contains, tags, imageData) {
     
     // Look in each image object.
     for(var i = 0; i < imageData.length; i++) {
-        
         // Look in every property of that image.
         imageLoop:
         for(var key in imageData[i]) {
-            
             // For each property, look for all the keywords.
             for (var j = 0; j < contains.length; j++) {
-                
                 // If the keyword is in the property add the index to the results
                 // and go to the next image.
                 if(String(imageData[i][key]).toLowerCase().indexOf(contains[j]) !== -1) {
@@ -56,67 +49,14 @@ function findKeywords(contains, tags, imageData) {
     return results;
 }
 
-function findTags(tags, imageTagAssociative) {
-    var results = [];
-    
-    for (var i = 0; i < imageTagAssociative.length; i++) {
-        for (var j = 0; j < tags.length; j++) {
-            if (imageTagAssociative[i].tag === tags[j]) {
-                results.push(imageTagAssociative[i].imageId);
-            }
-        }
-    }
-    
-    return results;
-}
-
-function renderCards(imageData) {
-    var html = '<div class="row">';
-    
-    for (var i = 0; i < imageData.length; i++) {
-        html += renderCard(imageData[i]);
-    }
-    
-    html += '</div>';
-    $('#main-cards').empty().append(html);
-}
-
-function renderSelectCards(selectImageData) {
-    var html = '<div class="row">';
-    
-    // indices[i] is an _id
-    // need to get the object from this id and then pass that.
-    
-    for (var i = 0; i < selectImageData.length; i++) {
-        html += renderCard(selectImageData[i]);
-    }
-    
-    html += '</div>';
-    $('#main-cards').empty().append(html);
-}
-
-function renderCard(imgData) {
-    return '<div class="col-xs-12 col-md-6 col-lg-4 image-card">' + 
-                '<div class="card-container" data-id="' + imgData._id + '">' +
-                    '<div class="img-container" data-filename="' + imgData.filename + '" data-name="' + imgData.name + '" data-description="' + imgData.description + '">' +
-                        '<span class="img-helper"></span>' +
-                        '<img src="http://aaronmcavinue.com/image-organizer/' + imgData.filename + '"></img>' +
-                    '</div>' +
-                    '<br />' +
-                    '<span>' + imgData.description + '</span>' +
-                    '<br />' +
-                    '<a href="" class="edit-card" data-id="' + imgData._id + '"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Edit</a>' +
-                    '<a href="" class="delete-card" data-id="' + imgData._id + '"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Delete</a>' +
-                '</div>' +
-            '</div>';
-}
-
 $(function() {
+  var imageData;
+  
   // Load the images.
   $.getJSON("art-data.json", function(json) {
+    imageData = json;
     $('#js-render-images').append(renderImages(json));
   });
-  
   
   // Toggle the filters form.
   $('#toggle-arrow').on('click', function() {
@@ -135,20 +75,20 @@ $(function() {
   $('#filter-form').submit(function(e) {
      e.preventDefault();
      
+     debugger;
+     // Get the tag inputs from the UI.
      var inputs = $( this ).serializeArray(); 
      var contains = (inputs[0]['name'] === 'contains') ? inputs[0]['value'] : null;  // If the first object is the 'contains' input (it should be), return the value of the input.
+     contains = contains.trim().toLowerCase().split(/[^a-zA-Z0-9']+/ig).filter(function(el, i, self) { return (el.length !== 0) && (i === self.indexOf(el)); }); // Sanitize contains.
      inputs.splice(0, 1);
      
-     var formTags = [];
-     
      // Extract just the tag names from the form inputs.
-     for (var i = 0; i < inputs.length; i++) {
-         formTags[i] = inputs[i]['name'];
-     }
+     var formTags = [];
+     inputs.forEach(function(input, i) {
+       formTags.push(input['name']);
+     });
      
-     var results = [];
-     results = results.concat(findKeywords(contains, formTags, imageData));
-     results = results.concat(findTags(formTags, imageTagAssociative));
+     var results = findKeywords(contains, formTags, imageData);
      
      // Remove duplicates from the results.
      results = results.filter(function(elem, index, self) {
@@ -167,10 +107,10 @@ $(function() {
           }
      });
      
-     if (results.length !== 0) {
+     /*if (results.length !== 0) {
          renderSelectCards(resultImages);
      } else {
          renderCards(imageData);
-     }
+     }*/
   });
 });

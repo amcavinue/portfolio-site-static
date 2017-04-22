@@ -159,6 +159,14 @@ header {
 .img-6 {
   background-image: url("/content/development/rfl-1.jpg"); }
 
+#art-header {
+  background-color: rgba(21, 21, 21, 0.8);
+  color: #fff; }
+  #art-header .social a {
+    color: #fff; }
+    #art-header .social a:hover {
+      color: #923232; }
+
 #art-body {
   text-align: center;
   font-size: 17px;
@@ -166,7 +174,7 @@ header {
   font-family: "Lato", sans-serif;
   line-height: 1.5em;
   color: #3c0404;
-  background: #eff3f5;
+  background: #fafafb;
   /*background: url('/M6962Xw-5-bw.png');
   background-attachment: fixed;
   background-position: center;
@@ -174,10 +182,11 @@ header {
   overflow-x: hidden; }
 
 #art-intro {
-  background-color: rgba(45, 45, 45, 0.8);
+  background-color: rgba(65, 129, 181, 0.81);
   color: #fff; }
   #art-intro legend {
-    color: #fff; }
+    color: #fff;
+    border-bottom: none; }
   #art-intro #filter-form {
     margin-bottom: 1em;
     padding: 0 0.5em; }
@@ -185,6 +194,8 @@ header {
       margin-bottom: 1em; }
     #art-intro #filter-form .form-group {
       margin-bottom: 1em; }
+      #art-intro #filter-form .form-group input {
+        color: #3c0404; }
     #art-intro #filter-form #toggle-arrow {
       width: 3em;
       height: 3em;
