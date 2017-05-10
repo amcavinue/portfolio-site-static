@@ -95,25 +95,41 @@ header {
     color: #fff;
     padding: 1em;
     margin: 1em 0;
-    background-color: rgba(51, 45, 45, 0.75); }
+    background-color: rgba(51, 45, 45, 0.75);
+    box-shadow: 0 0.2em 0.2em rgba(51, 45, 45, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    /* Rounded corners */
+    -moz-border-radius: 0.2em;
+    -webkit-border-radius: 0.2em;
+    border-radius: 0.2em;
+    /* future proofing */
+    -khtml-border-radius: 0.2em;
+    /* for old Konqueror browsers */ }
     .work-samples .project hr {
       margin: 1.5em auto; }
     .work-samples .project .img-responsive {
       height: 290px;
       background-position: top;
-      background-size: cover; }
+      background-size: cover;
+      border: 2px solid #383838;
+      /* Rounded corners */
+      -moz-border-radius: 0.2em;
+      -webkit-border-radius: 0.2em;
+      border-radius: 0.2em;
+      /* future proofing */
+      -khtml-border-radius: 0.2em;
+      /* for old Konqueror browsers */ }
     .work-samples .project .btn {
       border: none;
-      border-radius: 0;
       font-size: 1.05em;
       font-weight: 300;
       display: block;
       /* Rounded corners */
-      -moz-border-radius: 10px;
-      -webkit-border-radius: 10px;
-      border-radius: 10px;
+      -moz-border-radius: 0.2em;
+      -webkit-border-radius: 0.2em;
+      border-radius: 0.2em;
       /* future proofing */
-      -khtml-border-radius: 10px;
+      -khtml-border-radius: 0.2em;
       /* for old Konqueror browsers */ }
     .work-samples .project .btn-github {
       background-color: transparent;

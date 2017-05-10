@@ -100,6 +100,14 @@ header {
     padding: 1em;
     margin: 1em 0;
     background-color: rgba(51, 45, 45, 0.75);
+    box-shadow: 0 0.2em 0.2em rgba(51, 45, 45, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    
+    /* Rounded corners */
+    -moz-border-radius: 0.2em;
+    -webkit-border-radius: 0.2em;
+    border-radius: 0.2em; /* future proofing */
+    -khtml-border-radius: 0.2em; /* for old Konqueror browsers */
     
     hr {
       margin: 1.5em auto;
@@ -109,20 +117,26 @@ header {
       height: 290px;
       background-position: top;
       background-size: cover;
+      border: 2px solid rgb(56, 56, 56);
+      
+      /* Rounded corners */
+      -moz-border-radius: 0.2em;
+      -webkit-border-radius: 0.2em;
+      border-radius: 0.2em; /* future proofing */
+      -khtml-border-radius: 0.2em; /* for old Konqueror browsers */
     }
     
     .btn {
       border: none;
-      border-radius: 0;
       font-size: 1.05em;
       font-weight: 300;
       display: block;
       
       /* Rounded corners */
-      -moz-border-radius: 10px;
-      -webkit-border-radius: 10px;
-      border-radius: 10px; /* future proofing */
-      -khtml-border-radius: 10px; /* for old Konqueror browsers */
+      -moz-border-radius: 0.2em;
+      -webkit-border-radius: 0.2em;
+      border-radius: 0.2em; /* future proofing */
+      -khtml-border-radius: 0.2em; /* for old Konqueror browsers */
     }
     
     .btn-github {
