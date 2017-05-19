@@ -88,28 +88,34 @@ header {
 }
 
 #testimonials {
-  background: rgba(193, 193, 193, 0.9);
+  background: rgba(212, 212, 212, 0.8);
   padding: 0.5em;
   
   .reference {
-    margin: 1em auto;
+    margin: 0 auto;
     border-radius: 50%;
     width: 150px;
   }
   
   #testimonials-carousel {
+    padding: 1em;
+    
     .carousel-caption {
       color: $color-1;
+      position: static;
+      padding: 0;
+      text-shadow: none;
     }
     
     .carousel-control {
+      color: $color-1;
       background-image: none;
     }
   }
 }
 
 #services {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.8);
   padding: 0.5em;
 }
 

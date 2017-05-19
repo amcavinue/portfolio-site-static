@@ -87,19 +87,25 @@ header {
       font-size: 0.8em; }
 
 #testimonials {
-  background: rgba(193, 193, 193, 0.9);
+  background: rgba(212, 212, 212, 0.8);
   padding: 0.5em; }
   #testimonials .reference {
-    margin: 1em auto;
+    margin: 0 auto;
     border-radius: 50%;
     width: 150px; }
-  #testimonials #testimonials-carousel .carousel-caption {
-    color: #3c0404; }
-  #testimonials #testimonials-carousel .carousel-control {
-    background-image: none; }
+  #testimonials #testimonials-carousel {
+    padding: 1em; }
+    #testimonials #testimonials-carousel .carousel-caption {
+      color: #3c0404;
+      position: static;
+      padding: 0;
+      text-shadow: none; }
+    #testimonials #testimonials-carousel .carousel-control {
+      color: #3c0404;
+      background-image: none; }
 
 #services {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.8);
   padding: 0.5em; }
 
 .work-samples {
