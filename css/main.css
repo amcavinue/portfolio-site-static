@@ -37,7 +37,8 @@ h1, h2 {
   font-family: "Questrial", sans-serif; }
 
 h2, h3 {
-  font-weight: 500; }
+  font-weight: 500;
+  color: #130101; }
 
 header {
   width: 100%;
@@ -73,7 +74,8 @@ header {
   padding: 5em 0.5em;
   color: #fff; }
   #intro h2 {
-    text-align: left; }
+    text-align: left;
+    color: #fff; }
   #intro #avatar {
     margin: 1em 0;
     border-radius: 50%;
@@ -97,14 +99,14 @@ header {
     padding: 0;
     margin-top: 1em; }
     #testimonials #testimonials-carousel .carousel-caption {
-      color: #210303;
+      color: #130101;
       position: static;
       padding: 0;
       text-shadow: none; }
       #testimonials #testimonials-carousel .carousel-caption .testimonial-text {
         margin-top: 0.5em; }
       #testimonials #testimonials-carousel .carousel-caption hr {
-        border-color: #210303;
+        border-color: #130101;
         margin: 0.5em auto;
         width: 2em; }
       #testimonials #testimonials-carousel .carousel-caption h4 {
@@ -123,7 +125,7 @@ header {
   list-style-type: none; }
   .work-samples h2 {
     margin-bottom: 1em;
-    color: #151414; }
+    color: #130101; }
   .work-samples .project {
     color: #fff;
     padding: 0.5em;
@@ -137,6 +139,8 @@ header {
     /* future proofing */
     -khtml-border-radius: 0.2em;
     /* for old Konqueror browsers */ }
+    .work-samples .project h3 {
+      color: #fff; }
     .work-samples .project hr {
       margin: 1.5em auto; }
     .work-samples .project .img-responsive {
@@ -183,6 +187,8 @@ header {
   padding: 0.5em 0.5em 2em 0.5em;
   color: #fff;
   margin-top: 2em; }
+  .contact h2 {
+    color: #fff; }
   .contact .email {
     color: #81acff;
     font-size: 1.2em;

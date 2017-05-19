@@ -16,6 +16,7 @@ h1, h2 {
 
 h2, h3 {
   font-weight: 500;
+  color: $color-0;
 }
 
 header {
@@ -67,6 +68,7 @@ header {
   
   h2 {
     text-align: left;
+    color: $color-3;
   }
   
   #avatar {
@@ -141,7 +143,7 @@ header {
   
   h2 {
     margin-bottom: 1em;
-    color: rgba(21, 20, 20, 1);
+    color: $color-0;
   }
   
   .project {
@@ -156,6 +158,10 @@ header {
     -webkit-border-radius: 0.2em;
     border-radius: 0.2em; /* future proofing */
     -khtml-border-radius: 0.2em; /* for old Konqueror browsers */
+    
+    h3 {
+      color: $color-3;
+    }
     
     hr {
       margin: 1.5em auto;
@@ -216,6 +222,10 @@ header {
     padding: 0.5em 0.5em 2em 0.5em;
     color: $color-3;
     margin-top: 2em;
+  
+  h2 {
+    color: $color-3;
+  }
   
   .email {
     color: rgb(129, 172, 255);
