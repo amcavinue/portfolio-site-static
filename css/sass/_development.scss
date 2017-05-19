@@ -21,7 +21,7 @@ h2, h3 {
 header {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 1em;
+  padding: 0.5em;
   text-align: left;
   
   .name {
@@ -62,7 +62,7 @@ header {
 #intro {
   background: rgba(39, 39, 39, 0.8);
   text-align: left;
-  padding: 5em 1em;
+  padding: 5em 0.5em;
   color: $color-3;
   
   h2 {
@@ -87,6 +87,16 @@ header {
   }
 }
 
+#testimonials {
+  background: rgba(193, 193, 193, 0.9);
+  padding: 0.5em;
+}
+
+#services {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.5em;
+}
+
 .work-samples {
   list-style-type: none;
   
@@ -97,11 +107,10 @@ header {
   
   .project {
     color: $color-3;
-    padding: 1em;
+    padding: 0.5em;
     margin: 1em 0;
     background-color: rgba(51, 45, 45, 0.75);
     box-shadow: 0 0.2em 0.2em rgba(51, 45, 45, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.25);
     
     /* Rounded corners */
     -moz-border-radius: 0.2em;
@@ -165,7 +174,7 @@ header {
 
 .contact {
     background-color: rgba(39, 39, 39, 0.8);
-    padding: 1em 1em 3em 1em;
+    padding: 0.5em 0.5em 3em 0.5em;
     color: $color-3;
     margin-top: 2em;
   
