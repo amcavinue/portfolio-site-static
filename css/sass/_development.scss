@@ -90,6 +90,22 @@ header {
 #testimonials {
   background: rgba(193, 193, 193, 0.9);
   padding: 0.5em;
+  
+  .reference {
+    margin: 1em auto;
+    border-radius: 50%;
+    width: 150px;
+  }
+  
+  #testimonials-carousel {
+    .carousel-caption {
+      color: $color-1;
+    }
+    
+    .carousel-control {
+      background-image: none;
+    }
+  }
 }
 
 #services {
@@ -174,7 +190,7 @@ header {
 
 .contact {
     background-color: rgba(39, 39, 39, 0.8);
-    padding: 0.5em 0.5em 3em 0.5em;
+    padding: 0.5em 0.5em 2em 0.5em;
     color: $color-3;
     margin-top: 2em;
   

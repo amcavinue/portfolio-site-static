@@ -89,6 +89,14 @@ header {
 #testimonials {
   background: rgba(193, 193, 193, 0.9);
   padding: 0.5em; }
+  #testimonials .reference {
+    margin: 1em auto;
+    border-radius: 50%;
+    width: 150px; }
+  #testimonials #testimonials-carousel .carousel-caption {
+    color: #3c0404; }
+  #testimonials #testimonials-carousel .carousel-control {
+    background-image: none; }
 
 #services {
   background: rgba(255, 255, 255, 0.9);
@@ -155,7 +163,7 @@ header {
 
 .contact {
   background-color: rgba(39, 39, 39, 0.8);
-  padding: 0.5em 0.5em 3em 0.5em;
+  padding: 0.5em 0.5em 2em 0.5em;
   color: #fff;
   margin-top: 2em; }
   .contact .email {
