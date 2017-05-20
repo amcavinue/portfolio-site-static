@@ -19,11 +19,17 @@ body {
   font-family: $font-2;
   line-height: 1.5em;
   color: $color-1;
-  background: url('/M6962Xw-7.png');
+  background-color: #74a5c8;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   overflow-x: hidden;
+  
+  background: -webkit-linear-gradient(left, rgb(63, 94, 144) 0%, rgb(111, 158, 194) 44%, rgb(103, 146, 186) 100%);
+  background: -o-linear-gradient(left, rgb(63, 94, 144) 0%, rgb(111, 158, 194) 44%, rgb(103, 146, 186) 100%);
+  background: -ms-linear-gradient(left, rgb(63, 94, 144) 0%, rgb(111, 158, 194) 44%, rgb(103, 146, 186) 100%);
+  background: -moz-linear-gradient(left, rgb(63, 94, 144) 0%, rgb(111, 158, 194) 44%, rgb(103, 146, 186) 100%);
+  background: linear-gradient(to right, rgb(63, 94, 144) 0%, rgb(111, 158, 194) 44%, rgb(103, 146, 186) 100%);
 }
 
 strong {

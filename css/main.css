@@ -9,11 +9,16 @@ body {
   font-family: "Lato", sans-serif;
   line-height: 1.5em;
   color: #3c0404;
-  background: url("/M6962Xw-7.png");
+  background-color: #74a5c8;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background: -webkit-linear-gradient(left, #3f5e90 0%, #6f9ec2 44%, #6792ba 100%);
+  background: -o-linear-gradient(left, #3f5e90 0%, #6f9ec2 44%, #6792ba 100%);
+  background: -ms-linear-gradient(left, #3f5e90 0%, #6f9ec2 44%, #6792ba 100%);
+  background: -moz-linear-gradient(left, #3f5e90 0%, #6f9ec2 44%, #6792ba 100%);
+  background: linear-gradient(to right, #3f5e90 0%, #6f9ec2 44%, #6792ba 100%); }
 
 strong {
   color: #fff;
