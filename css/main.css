@@ -116,6 +116,8 @@ header {
       background-image: none;
       width: 5%;
       text-shadow: none; }
+      #testimonials #testimonials-carousel .carousel-control .glyphicon-chevron-left, #testimonials #testimonials-carousel .carousel-control .glyphicon-chevron-right {
+        top: 30%; }
 
 #services {
   background: rgba(255, 255, 255, 0.7);
