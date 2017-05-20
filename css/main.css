@@ -187,8 +187,7 @@ header {
 .contact {
   background-color: rgba(39, 39, 39, 0.8);
   padding: 0.5em 0.5em 2em 0.5em;
-  color: #fff;
-  margin-top: 2em; }
+  color: #fff; }
   .contact h2 {
     color: #fff; }
   .contact .email {
