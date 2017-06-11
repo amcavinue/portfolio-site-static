@@ -227,8 +227,8 @@
 				
 				if (currHeight + heightIncrement < scrollHeight) {
 				  currHeight += heightIncrement;
-				} else if (currHeight < scrollHeight) {
-				  currHeight = scrollHeight + 30;
+				} else {
+				  currHeight = 'auto';
 				  // Fade out view-more.
 				  $('.show-more').fadeOut();
 				}
