@@ -47,7 +47,7 @@ h2, h3 {
 
 header {
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 0.5em;
   text-align: left; }
   header .name {
@@ -135,7 +135,21 @@ header {
         top: 30%; }
 
 .work-samples {
-  list-style-type: none; }
+  list-style-type: none;
+  max-height: 45em;
+  overflow: hidden;
+  position: relative; }
+  .work-samples .show-more {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 30px 0 30px 0;
+    /* "transparent" only works here because == rgba(0,0,0,0) */
+    background-image: -moz-linear-gradient(top, transparent, black);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(1, black)); }
   .work-samples h2 {
     margin-bottom: 1em;
     color: #130101; }

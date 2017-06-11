@@ -193,6 +193,7 @@
           </div>
       </div>
       
+      <p class="show-more"><a href="#" class="button">Show More</a></p>
     </section>
   </div>
   
@@ -214,7 +215,38 @@
 
   ga('create', 'UA-69489495-1', 'auto');
   ga('send', 'pageview');
-
+</script>
+<script>
+  /* Show more fade: https://css-tricks.com/text-fade-read-more/ */
+  $(function() {
+			var heightIncrement = 765,
+			    currHeight = 765;
+			
+			$('.work-samples .button').click(function() {
+			  var scrollHeight = $('.work-samples')[0].scrollHeight;
+				
+				if (currHeight + heightIncrement < scrollHeight) {
+				  currHeight += heightIncrement;
+				} else if (currHeight < scrollHeight) {
+				  currHeight = scrollHeight + 30;
+				  // Fade out view-more.
+				  $('.show-more').fadeOut();
+				}
+				
+				$('.work-samples')
+					.css({
+						// Set height to prevent instant jumpdown when max height is removed
+						"height": currHeight,
+						"max-height": 9999
+					})
+					.animate({
+						"height": currHeight
+					});
+				
+				// prevent jump-down
+				return false;
+			});
+		});
 </script>
 </body>
 </html>
