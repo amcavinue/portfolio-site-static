@@ -61,10 +61,32 @@ header {
 }
 
 #intro {
-  background: rgba(39, 39, 39, 0.8);
   text-align: left;
-  padding: 5em 0.5em;
+  padding: 0 0.5em;
   color: $color-3;
+  position: relative;
+  
+  &:before {
+    /* CSS3 filters on background: https://stackoverflow.com/questions/20039765/how-to-apply-a-css-3-blur-filter-to-a-background-image */
+    background: rgba(39, 39, 39, 0.8);
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  
+    display: block;
+    background-image: url('/code1.jpg');
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+  
+    -webkit-filter: blur(7px) contrast(75%);
+    -moz-filter: blur(7px) contrast(75%);
+    -o-filter: blur(7px) contrast(75%);
+    -ms-filter: blur(7px) contrast(75%);
+    filter: blur(7px) contrast(75%);
+  }
   
   h2 {
     text-align: left;
@@ -81,6 +103,7 @@ header {
     text-align: center;
     font-size: 1.3em;
     color: $color-3;
+    padding: 5em 0;
     
     #blurb {
       text-align: left;
