@@ -146,10 +146,21 @@ header {
     width: 100%;
     text-align: center;
     margin: 0;
-    padding: 30px 0 30px 0;
-    /* "transparent" only works here because == rgba(0,0,0,0) */
-    background-image: -moz-linear-gradient(top, transparent, black);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(1, black)); }
+    padding: 3em 0 2em 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(1, #6d9cc0)); }
+    .work-samples .show-more .button {
+      color: #6d9bc0;
+      background-color: rgba(255, 255, 255, 0.8);
+      font-weight: 700;
+      padding: 0.5em 1em;
+      text-decoration: none;
+      -moz-border-radius: 0.2em;
+      -webkit-border-radius: 0.2em;
+      border-radius: 0.2em;
+      -khtml-border-radius: 0.2em; }
+      .work-samples .show-more .button:hover {
+        background-color: #fff;
+        color: #6d9bc0; }
   .work-samples h2 {
     margin-bottom: 1em;
     color: #130101; }
