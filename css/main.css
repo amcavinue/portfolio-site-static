@@ -75,7 +75,9 @@ header {
 
 #intro {
   background: rgba(39, 39, 39, 0.8);
-  background-image: url("/code5.jpg");
+  background-image: url("/new-code-2.jpg");
+  background-position: center center;
+  background-size: cover;
   text-align: left;
   padding: 0 0.5em;
   color: #fff;
@@ -96,8 +98,13 @@ header {
       text-align: left;
       font-size: 0.8em; }
 
+#services {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0.5em; }
+
 #testimonials {
-  background: rgba(212, 212, 212, 0.8);
+  /*background: rgba(212, 212, 212, 0.8);*/
+  background: rgba(255, 255, 255, 0.7);
   padding: 0.5em; }
   #testimonials .reference {
     margin: 0 auto;
@@ -126,10 +133,6 @@ header {
       text-shadow: none; }
       #testimonials #testimonials-carousel .carousel-control .glyphicon-chevron-left, #testimonials #testimonials-carousel .carousel-control .glyphicon-chevron-right {
         top: 30%; }
-
-#services {
-  background: rgba(255, 255, 255, 0.7);
-  padding: 0.5em; }
 
 .work-samples {
   list-style-type: none; }

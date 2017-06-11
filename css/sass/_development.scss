@@ -62,7 +62,9 @@ header {
 
 #intro {
   background: rgba(39, 39, 39, 0.8);
-  background-image: url('/code5.jpg');
+  background-image: url('/new-code-2.jpg');
+  background-position: center center;
+  background-size: cover;
   text-align: left;
   padding: 0 0.5em;
   color: $color-3;
@@ -92,8 +94,14 @@ header {
   }
 }
 
+#services {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0.5em;
+}
+
 #testimonials {
-  background: rgba(212, 212, 212, 0.8);
+  /*background: rgba(212, 212, 212, 0.8);*/
+  background: rgba(255, 255, 255, 0.7);
   padding: 0.5em;
   
   
@@ -139,11 +147,6 @@ header {
       }
     }
   }
-}
-
-#services {
-  background: rgba(255, 255, 255, 0.7);
-  padding: 0.5em;
 }
 
 .work-samples {
