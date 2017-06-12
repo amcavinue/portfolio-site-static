@@ -217,7 +217,7 @@
   ga('send', 'pageview');
 </script>
 <script>
-  /* AnimateAuto: https://css-tricks.com/snippets/jquery/animate-heightwidth-to-auto/ */
+  /* Animate to auto height: https://css-tricks.com/snippets/jquery/animate-heightwidth-to-auto/ */
   jQuery.fn.animateAuto = function(prop, speed, callback){
     var elem, height, width;
     return this.each(function(i, el){
@@ -247,7 +247,6 @@
 				
 				if (currHeight + heightIncrement < scrollHeight) {
 				  currHeight += heightIncrement;
-
 				  $('.work-samples')
 					.animate({
 						'height': currHeight

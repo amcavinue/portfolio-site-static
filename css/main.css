@@ -146,7 +146,7 @@ header {
     text-align: center;
     margin: 0;
     padding: 3em 0 2em 0;
-    background-image: linear-gradient(180deg, transparent, rgba(109, 156, 192, 0.88), #6d9cc0); }
+    background-image: linear-gradient(180deg, transparent, rgba(52, 61, 69, 0.6), rgba(20, 24, 27, 0.9)); }
     .work-samples .show-more .button {
       color: #6d9bc0;
       background-color: rgba(255, 255, 255, 0.8);
