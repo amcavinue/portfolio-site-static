@@ -253,7 +253,9 @@
 						'height': currHeight
 					}, 500);
 				} else {
-				  $('.work-samples').animateAuto('height', 500)
+				  $('.work-samples').animateAuto('height', 500, function() {
+				    $('.work-samples').css('height', 'auto');
+				  });
 				  $('.show-more').fadeOut();
 				}
 				
