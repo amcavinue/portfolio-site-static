@@ -47,7 +47,7 @@ h2, h3 {
 
 header {
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #F2F6F9;
   padding: 0.5em;
   text-align: left; }
   header .name {
@@ -99,12 +99,12 @@ header {
       font-size: 0.8em; }
 
 #services {
-  background: rgba(255, 255, 255, 0.8);
+  background: #EBEFF2;
   padding: 0.5em; }
 
 #testimonials {
   /*background: rgba(212, 212, 212, 0.8);*/
-  background: rgba(255, 255, 255, 0.7);
+  background: #E2E8EB;
   padding: 0.5em; }
   #testimonials .reference {
     margin: 0 auto;
@@ -381,10 +381,14 @@ header {
     float: none;
     position: static; }
   #intro {
-    padding: 3em 1em; } }
+    padding: 3em 1em; }
+    #intro .what-i-do {
+      padding: 0; } }
 
 @media (max-width: 500px) {
   h1 {
     font-size: 1.75em; }
   #intro {
-    padding: 1em; } }
+    padding: 1em; }
+    #intro .what-i-do {
+      padding: 0; } }
