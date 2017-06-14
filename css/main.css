@@ -381,7 +381,8 @@ header {
     float: none;
     position: static; }
   #intro {
-    padding: 3em 1em; }
+    padding: 3em 1em;
+    background-size: initial; }
     #intro .what-i-do {
       padding: 0; } }
 
@@ -389,6 +390,7 @@ header {
   h1 {
     font-size: 1.75em; }
   #intro {
-    padding: 1em; }
+    padding: 1em;
+    background-size: initial; }
     #intro .what-i-do {
       padding: 0; } }
