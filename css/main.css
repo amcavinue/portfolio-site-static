@@ -109,9 +109,10 @@ header {
       text-align: left;
       margin-bottom: 0.5em;
       padding: 1em;
-      background: #EBEFF2;
+      background: #404750;
       box-shadow: 0 0.2em 0.2em rgba(51, 45, 45, 0.5);
       height: 100%;
+      color: #fff;
       /* Rounded corners */
       -moz-border-radius: 0.2em;
       -webkit-border-radius: 0.2em;
@@ -120,19 +121,23 @@ header {
       -khtml-border-radius: 0.2em;
       /* for old Konqueror browsers */ }
       #services .row .service-item-container .service-item h3 {
-        text-align: center; }
+        text-align: center;
+        color: #fff; }
+      #services .row .service-item-container .service-item hr {
+        margin: 1em auto; }
       #services .row .service-item-container .service-item .img-container {
         height: 6em;
         width: 6em;
         text-align: center;
-        border: 1px #939598 solid;
+        border: 2px #9dffeb solid;
         padding: 1.2em;
         border-radius: 50%;
         margin: 0 auto; }
         #services .row .service-item-container .service-item .img-container .icon {
           max-width: 60px;
           max-height: 60px;
-          margin: 0 auto; }
+          margin: 0 auto;
+          filter: brightness(200%); }
 
 #testimonials {
   /*background: rgba(212, 212, 212, 0.8);*/
