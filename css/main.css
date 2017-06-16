@@ -75,8 +75,8 @@ header {
 
 #intro {
   background: rgba(39, 39, 39, 0.8);
-  background-image: url("/new-code-3.jpg");
-  background-position: right center;
+  background-image: url("/new-code-4.jpg");
+  background-position: left center;
   background-size: cover;
   text-align: left;
   padding: 0 0.5em;
@@ -84,7 +84,8 @@ header {
   position: relative; }
   #intro h2 {
     text-align: left;
-    color: #fff; }
+    color: #fff;
+    font-weight: 700; }
   #intro #avatar {
     margin: 1em 0;
     border-radius: 50%;
