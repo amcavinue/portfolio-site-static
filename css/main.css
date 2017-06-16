@@ -99,14 +99,23 @@ header {
       font-size: 0.8em; }
 
 #services {
-  background: #EBEFF2;
   padding: 0.5em 1em;
   color: #130101; }
+  #services h2 {
+    margin-bottom: 1em; }
   #services .service-item {
     text-align: left;
-    min-height: 16em;
+    min-height: 19em;
     margin-bottom: 0.5em;
-    padding: 1em; }
+    padding: 1em;
+    background: #EBEFF2;
+    box-shadow: 0 0.2em 0.2em rgba(51, 45, 45, 0.5);
+    -moz-border-radius: 0.2em;
+    -webkit-border-radius: 0.2em;
+    border-radius: 0.2em;
+    /* future proofing */
+    -khtml-border-radius: 0.2em;
+    /* for old Konqueror browsers */ }
     #services .service-item h3 {
       text-align: center; }
     #services .service-item .img-container {
