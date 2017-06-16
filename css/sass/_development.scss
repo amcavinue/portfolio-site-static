@@ -103,17 +103,9 @@ header {
   }
   
   .row {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    overflow: hidden;
-    
     .service-item-container {
-      flex: 1;
-      
       .service-item {
         text-align: left;
-        min-height: 19em;
         margin-bottom: 0.5em;
         padding: 1em;
         background: #EBEFF2;
