@@ -96,13 +96,14 @@ header {
 
 #services {
   background: #EBEFF2;
-  padding: 0.5em;
+  padding: 0.5em 1em;
   color: $color-0;
   
   .service-item {
     text-align: left;
-    height: 16em;
+    min-height: 16em;
     margin-bottom: 0.5em;
+    padding: 1em;
     
     h3 {
       text-align: center;
@@ -187,8 +188,9 @@ header {
     background-image: linear-gradient(180deg, transparent, rgba(52, 61, 69, 0.6), rgba(20, 24, 27, 0.9));
     
     .button {
-      color: #6d9bc0;
-      background-color: rgba(255, 255, 255, 0.8);
+      color: #414850;
+      background-color: $color-3;
+      opacity: 0.8;
       font-weight: 700;
       padding: 0.5em 1em;
       text-decoration: none;
@@ -198,8 +200,7 @@ header {
       -khtml-border-radius: 0.2em;
       
       &:hover {
-        background-color: $color-3;
-        color: #6d9bc0;
+        opacity: 1;
       }
     }
   }
