@@ -102,32 +102,45 @@ header {
     margin-bottom: 1em;
   }
   
-  .service-item {
-    text-align: left;
-    min-height: 19em;
-    margin-bottom: 0.5em;
-    padding: 1em;
-    background: #EBEFF2;
-    box-shadow: 0 0.2em 0.2em rgba(51, 45, 45, 0.5);
+  .row {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
     
-    -moz-border-radius: 0.2em;
-    -webkit-border-radius: 0.2em;
-    border-radius: 0.2em; /* future proofing */
-    -khtml-border-radius: 0.2em; /* for old Konqueror browsers */
-    
-    h3 {
-      text-align: center;
-    }
-    
-    .img-container {
-      height: 4em;
-      text-align: center;
+    .service-item-container {
+      flex: 1;
       
-      .icon {
-        max-width: 100px;
-        max-height: 75px;
-        margin: 0 auto;
-      } 
+      .service-item {
+        text-align: left;
+        min-height: 19em;
+        margin-bottom: 0.5em;
+        padding: 1em;
+        background: #EBEFF2;
+        box-shadow: 0 0.2em 0.2em rgba(51, 45, 45, 0.5);
+        height: 100%;
+        
+        /* Rounded corners */
+        -moz-border-radius: 0.2em;
+        -webkit-border-radius: 0.2em;
+        border-radius: 0.2em; /* future proofing */
+        -khtml-border-radius: 0.2em; /* for old Konqueror browsers */
+        
+        h3 {
+          text-align: center;
+        }
+        
+        .img-container {
+          height: 4em;
+          text-align: center;
+          
+          .icon {
+            max-width: 100px;
+            max-height: 75px;
+            margin: 0 auto;
+          } 
+        }
+      }
     }
   }
 }
