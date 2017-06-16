@@ -100,7 +100,21 @@ header {
 
 #services {
   background: #EBEFF2;
-  padding: 0.5em; }
+  padding: 0.5em;
+  color: #130101; }
+  #services .service-item {
+    text-align: left;
+    height: 16em;
+    margin-bottom: 0.5em; }
+    #services .service-item h3 {
+      text-align: center; }
+    #services .service-item .img-container {
+      height: 4em;
+      text-align: center; }
+      #services .service-item .img-container .icon {
+        max-width: 100px;
+        max-height: 75px;
+        margin: 0 auto; }
 
 #testimonials {
   /*background: rgba(212, 212, 212, 0.8);*/

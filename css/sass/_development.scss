@@ -97,6 +97,28 @@ header {
 #services {
   background: #EBEFF2;
   padding: 0.5em;
+  color: $color-0;
+  
+  .service-item {
+    text-align: left;
+    height: 16em;
+    margin-bottom: 0.5em;
+    
+    h3 {
+      text-align: center;
+    }
+    
+    .img-container {
+      height: 4em;
+      text-align: center;
+      
+      .icon {
+        max-width: 100px;
+        max-height: 75px;
+        margin: 0 auto;
+      } 
+    }
+  }
 }
 
 #testimonials {
