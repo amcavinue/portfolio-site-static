@@ -103,29 +103,31 @@ header {
   color: #130101; }
   #services h2 {
     margin-bottom: 1em; }
-  #services .row .service-item-container .service-item {
-    text-align: left;
-    margin-bottom: 0.5em;
-    padding: 1em;
-    background: #EBEFF2;
-    box-shadow: 0 0.2em 0.2em rgba(51, 45, 45, 0.5);
-    height: 100%;
-    /* Rounded corners */
-    -moz-border-radius: 0.2em;
-    -webkit-border-radius: 0.2em;
-    border-radius: 0.2em;
-    /* future proofing */
-    -khtml-border-radius: 0.2em;
-    /* for old Konqueror browsers */ }
-    #services .row .service-item-container .service-item h3 {
-      text-align: center; }
-    #services .row .service-item-container .service-item .img-container {
-      height: 4em;
-      text-align: center; }
-      #services .row .service-item-container .service-item .img-container .icon {
-        max-width: 100px;
-        max-height: 75px;
-        margin: 0 auto; }
+  #services .row {
+    margin-bottom: 1em; }
+    #services .row .service-item-container .service-item {
+      text-align: left;
+      margin-bottom: 0.5em;
+      padding: 1em;
+      background: #EBEFF2;
+      box-shadow: 0 0.2em 0.2em rgba(51, 45, 45, 0.5);
+      height: 100%;
+      /* Rounded corners */
+      -moz-border-radius: 0.2em;
+      -webkit-border-radius: 0.2em;
+      border-radius: 0.2em;
+      /* future proofing */
+      -khtml-border-radius: 0.2em;
+      /* for old Konqueror browsers */ }
+      #services .row .service-item-container .service-item h3 {
+        text-align: center; }
+      #services .row .service-item-container .service-item .img-container {
+        height: 3.5em;
+        text-align: center; }
+        #services .row .service-item-container .service-item .img-container .icon {
+          max-width: 65px;
+          max-height: 65px;
+          margin: 0 auto; }
 
 #testimonials {
   /*background: rgba(212, 212, 212, 0.8);*/
