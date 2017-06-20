@@ -19,10 +19,6 @@
   line-height: 1.5em;
   color: $color-1;
   background: #fafafb;
-  /*background: url('/M6962Xw-5-bw.png');
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;*/
   overflow-x: hidden;
 }
 
@@ -76,7 +72,6 @@
       background-color: $color-3;
       @include round-corners;
       
-      
       li {
           display: inline;
           list-style-type: none;
@@ -110,12 +105,12 @@
 
 .image-card {
   margin-top: 1em;
-  text-align: center;
+  text-align: left;
   
   .card-container {
-    text-align: left;
-    
     .img-container {
+      text-align: center;
+      
       .img-helper {
         display: inline-block;
         height: 100%;
@@ -133,4 +128,13 @@
       margin-right: 1em;
     }
   }
+}
+
+
+
+
+@media only screen and (max-width : 992px) {
+   .image-card {
+     text-align: center;
+   }
 }

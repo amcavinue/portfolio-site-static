@@ -307,10 +307,6 @@ header {
   line-height: 1.5em;
   color: #3c0404;
   background: #fafafb;
-  /*background: url('/M6962Xw-5-bw.png');
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;*/
   overflow-x: hidden; }
 
 #art-intro {
@@ -382,9 +378,9 @@ header {
 
 .image-card {
   margin-top: 1em;
-  text-align: center; }
-  .image-card .card-container {
-    text-align: left; }
+  text-align: left; }
+  .image-card .card-container .img-container {
+    text-align: center; }
     .image-card .card-container .img-container .img-helper {
       display: inline-block;
       height: 100%;
@@ -393,8 +389,12 @@ header {
       max-width: 100%;
       max-height: 100vh;
       vertical-align: middle; }
-    .image-card .card-container a {
-      margin-right: 1em; }
+  .image-card .card-container a {
+    margin-right: 1em; }
+
+@media only screen and (max-width: 992px) {
+  .image-card {
+    text-align: center; } }
 
 @media (max-width: 750px) {
   h1 {
