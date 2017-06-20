@@ -44,12 +44,6 @@ function findKeywords(keywords, imageData) {
   return results;
 }
 
-function clearForm(imageData) {
-  $('.tag-list :checked').prop('checked', false);
-  $('#contains').val('');
-  $('#js-render-images').empty().append(renderImages(imageData));
-}
-
 $(function() {
   var imageData;
 
@@ -106,6 +100,8 @@ $(function() {
   
   // Watch the clear button.
   $('#clear').click(function(e) {
-    clearForm(imageData);
+    $('.tag-list :checked').prop('checked', false);
+    $('#contains').val('');
+    $('#js-render-images').empty().append(renderImages(imageData));
   });
 });

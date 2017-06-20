@@ -358,6 +358,8 @@ header {
     margin-bottom: 1em;
     padding: 0.5em;
     background-color: #fff;
+    max-width: 75%;
+    margin: 0 auto 1em auto;
     /* Rounded corners */
     -moz-border-radius: 0.2em;
     -webkit-border-radius: 0.2em;
@@ -404,7 +406,9 @@ header {
 
 @media only screen and (max-width: 992px) {
   .image-card {
-    text-align: center; } }
+    text-align: center; }
+  #art-intro .tag-list-container {
+    max-width: 100%; } }
 
 @media (max-width: 950px) {
   h1 {

@@ -70,6 +70,8 @@
       margin-bottom: 1em;
       padding: 0.5em;
       background-color: $color-3;
+      max-width: 75%;
+      margin: 0 auto 1em auto;
       @include round-corners;
       
       li {
@@ -133,5 +135,9 @@
 @media only screen and (max-width : 992px) {
    .image-card {
      text-align: center;
+   }
+   
+   #art-intro .tag-list-container {
+     max-width: 100%;
    }
 }
