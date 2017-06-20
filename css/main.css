@@ -4,7 +4,7 @@
 
 body {
   text-align: center;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 300;
   font-family: "Lato", sans-serif;
   line-height: 1.5em;
@@ -57,22 +57,15 @@ header {
       font-weight: 300;
       display: inline; }
     header .name h4 {
-      margin: 0 1em 0.5em 0;
+      margin: 0 1em 1em 0;
       display: inline; }
-  header .other-site {
-    color: #81acff;
-    font-weight: bold;
-    font-size: 1em;
-    margin-bottom: 0.5em; }
-    header .other-site:hover {
-      color: #81acff;
-      text-decoration: underline; }
   header .social {
     display: inline;
     float: right;
     white-space: nowrap;
     position: relative;
-    top: 0.25em; }
+    top: 0.25em;
+    margin-left: 1em; }
     header .social a {
       font-size: 1.5em;
       color: #3c0404;
@@ -80,6 +73,15 @@ header {
       padding-right: 0.25em; }
       header .social a:hover {
         color: #923232; }
+  header .other-site {
+    color: #81acff;
+    font-weight: bold;
+    font-size: 1em;
+    float: right;
+    margin-top: 0.3em; }
+    header .other-site:hover {
+      color: #81acff;
+      text-decoration: underline; }
 
 #intro {
   background: rgba(39, 39, 39, 0.8);
@@ -412,11 +414,13 @@ header {
   header .name h4 {
     display: block; }
   header .other-site {
-    display: block; }
+    display: block;
+    float: none; }
   header .social {
     display: block;
     float: none;
-    position: static; }
+    position: static;
+    margin-left: 0; }
   #intro {
     padding: 3em 1em;
     background-size: initial; }
