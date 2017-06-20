@@ -21,6 +21,7 @@ function renderImages(images) {
 function findKeywords(keywords, imageData) {
   // Return any images that match any of the keywords in any of their properties.
   // http://stackoverflow.com/questions/8517089/js-search-in-object-values
+  
   var results = [];
 
   imageData.forEach(function(image, i) {

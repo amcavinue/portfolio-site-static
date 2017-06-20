@@ -57,8 +57,16 @@ header {
       font-weight: 300;
       display: inline; }
     header .name h4 {
-      margin: 0 1em 1em 0;
+      margin: 0 1em 0.5em 0;
       display: inline; }
+  header .other-site {
+    color: #81acff;
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 0.5em; }
+    header .other-site:hover {
+      color: #81acff;
+      text-decoration: underline; }
   header .social {
     display: inline;
     float: right;
@@ -396,12 +404,14 @@ header {
   .image-card {
     text-align: center; } }
 
-@media (max-width: 750px) {
+@media (max-width: 950px) {
   h1 {
     font-size: 2.25em; }
   header .name h1 {
     display: block; }
   header .name h4 {
+    display: block; }
+  header .other-site {
     display: block; }
   header .social {
     display: block;

@@ -35,8 +35,20 @@ header {
     }
     
     h4 {
-      margin: 0 1em 1em 0;
+      margin: 0 1em 0.5em 0;
       display: inline;
+    }
+  }
+  
+  .other-site {
+    color: rgb(129, 172, 255);
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    
+    &:hover {
+      color: rgb(129, 172, 255);
+      text-decoration: underline;
     }
   }
   
