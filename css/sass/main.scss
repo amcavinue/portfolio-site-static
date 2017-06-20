@@ -4,8 +4,16 @@ $font-2: 'Lato', sans-serif;
 $color-0: #130101; // Dark-black
 $color-1: #3c0404; // Black
 $color-2: #612323; // Black-red (Off-black)
-$color-3: #fff; // White
+$color-3: #fff;    // White
 $color-4: #562c2c; // Dark red
+
+@mixin round-corners {
+  /* Rounded corners */
+  -moz-border-radius: 0.2em;
+  -webkit-border-radius: 0.2em;
+  border-radius: 0.2em; /* future proofing */
+  -khtml-border-radius: 0.2em; /* for old Konqueror browsers */
+}
 
 * {
   margin: 0;
@@ -45,8 +53,6 @@ hr {
 
 @import "development";
 @import "art";
-@import "hero-carousel";
-@import "testimonial-carousel";
 
 @media (max-width: 750px) {
   h1 {

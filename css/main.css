@@ -314,8 +314,8 @@ header {
   overflow-x: hidden; }
 
 #art-intro {
-  background-color: rgba(65, 129, 181, 0.81);
-  color: #fff; }
+  background-color: #dedede;
+  color: #130101; }
   #art-intro legend {
     color: #fff;
     border-bottom: none; }
@@ -324,10 +324,18 @@ header {
     padding: 0 0.5em; }
     #art-intro #filter-form fieldset {
       margin-bottom: 1em; }
-    #art-intro #filter-form .form-group {
-      margin-bottom: 1em; }
-      #art-intro #filter-form .form-group input {
-        color: #3c0404; }
+      #art-intro #filter-form fieldset .form-group {
+        margin-bottom: 1em; }
+        #art-intro #filter-form fieldset .form-group input {
+          color: #3c0404;
+          border: none;
+          /* Rounded corners */
+          -moz-border-radius: 0.2em;
+          -webkit-border-radius: 0.2em;
+          border-radius: 0.2em;
+          /* future proofing */
+          -khtml-border-radius: 0.2em;
+          /* for old Konqueror browsers */ }
     #art-intro #filter-form #toggle-arrow {
       width: 3em;
       height: 3em;
@@ -343,7 +351,14 @@ header {
     overflow: auto;
     margin-bottom: 1em;
     padding: 0.5em;
-    background-color: #efefef; }
+    background-color: #fff;
+    /* Rounded corners */
+    -moz-border-radius: 0.2em;
+    -webkit-border-radius: 0.2em;
+    border-radius: 0.2em;
+    /* future proofing */
+    -khtml-border-radius: 0.2em;
+    /* for old Konqueror browsers */ }
     #art-intro .tag-list-container li {
       display: inline;
       list-style-type: none;
@@ -368,48 +383,18 @@ header {
 .image-card {
   margin-top: 1em;
   text-align: center; }
-  .image-card .card-container .img-container .img-helper {
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle; }
-  .image-card .card-container .img-container img {
-    max-width: 100%;
-    max-height: 100vh;
-    vertical-align: middle; }
-  .image-card .card-container a {
-    margin-right: 1em; }
-
-#hero-carousel {
-  height: 500px;
-  /* Since positioning the image, we need to help out the caption */
-  /* Declare heights because of positioning of img element */ }
-  #hero-carousel .carousel-caption {
-    z-index: 10; }
-  #hero-carousel .item {
-    height: 500px;
-    background-color: #777; }
-  #hero-carousel .carousel-inner > .item > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 500px; }
-
-#testimonial-carousel {
-  height: 250px;
-  /* Since positioning the image, we need to help out the caption */
-  /* Declare heights because of positioning of img element */ }
-  #testimonial-carousel .carousel-caption {
-    z-index: 10; }
-  #testimonial-carousel .item {
-    height: 250px;
-    background-color: red; }
-  #testimonial-carousel .carousel-inner > .item > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 250px; }
+  .image-card .card-container {
+    text-align: left; }
+    .image-card .card-container .img-container .img-helper {
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle; }
+    .image-card .card-container .img-container img {
+      max-width: 100%;
+      max-height: 100vh;
+      vertical-align: middle; }
+    .image-card .card-container a {
+      margin-right: 1em; }
 
 @media (max-width: 750px) {
   h1 {

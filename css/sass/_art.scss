@@ -27,8 +27,8 @@
 }
 
 #art-intro {
-  background-color: rgba(65, 129, 181, 0.81);
-  color: $color-3;
+  background-color: #dedede;
+  color: $color-0;
   
   legend {
     color: $color-3;
@@ -40,15 +40,17 @@
       padding: 0 0.5em;
       
       fieldset {
-          margin-bottom: 1em;
-      }
-      
-      .form-group {
+        margin-bottom: 1em;
+        
+        .form-group {
           margin-bottom: 1em;
           
           input {
             color: $color-1;
+            border: none;
+            @include round-corners;
           }
+        }  
       }
       
       #toggle-arrow {
@@ -71,7 +73,9 @@
       overflow: auto;
       margin-bottom: 1em;
       padding: 0.5em;
-      background-color: #efefef;
+      background-color: $color-3;
+      @include round-corners;
+      
       
       li {
           display: inline;
@@ -105,26 +109,28 @@
 }
 
 .image-card {
-    margin-top: 1em;
-    text-align: center;
+  margin-top: 1em;
+  text-align: center;
+  
+  .card-container {
+    text-align: left;
     
-    .card-container {
-        .img-container {
-            .img-helper {
-                display: inline-block;
-                height: 100%;
-                vertical-align: middle;
-            }
-            
-            img {
-                max-width: 100%;
-                max-height: 100vh;
-                vertical-align: middle;
-            }
-        }
-        
-        a {
-            margin-right: 1em;
+    .img-container {
+      .img-helper {
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+      }
+      
+      img {
+        max-width: 100%;
+        max-height: 100vh;
+        vertical-align: middle;
         }
     }
+      
+    a {
+      margin-right: 1em;
+    }
+  }
 }
