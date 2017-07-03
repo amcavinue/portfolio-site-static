@@ -132,12 +132,7 @@ header {
         height: 100%;
         color: $color-3;
         
-        /* Rounded corners */
-        -moz-border-radius: 0.2em;
-        -webkit-border-radius: 0.2em;
-        border-radius: 0.2em; /* future proofing */
-        -khtml-border-radius: 0.2em; /* for old Konqueror browsers */
-        
+        @include round-corners;
         h3 {
           text-align: center;
           color: $color-3;
@@ -237,16 +232,14 @@ header {
     background-image: linear-gradient(180deg, transparent, rgba(52, 61, 69, 0.6), rgba(20, 24, 27, 0.9));
     
     .button {
+      @include button-general;
+      
       color: #414850;
-      background-color: $color-3;
+      background-color: #9dffeb;
       opacity: 0.8;
       font-weight: 700;
       padding: 0.5em 1em;
       text-decoration: none;
-      -moz-border-radius: 0.2em;
-      -webkit-border-radius: 0.2em;
-      border-radius: 0.2em;
-      -khtml-border-radius: 0.2em;
       
       &:hover {
         opacity: 1;
@@ -266,11 +259,7 @@ header {
     background-color: rgba(51, 45, 45, 0.75);
     box-shadow: 0 0.2em 0.2em rgba(51, 45, 45, 0.5);
     
-    /* Rounded corners */
-    -moz-border-radius: 0.2em;
-    -webkit-border-radius: 0.2em;
-    border-radius: 0.2em; /* future proofing */
-    -khtml-border-radius: 0.2em; /* for old Konqueror browsers */
+    @include round-corners;
     
     h3 {
       color: $color-3;
@@ -286,24 +275,16 @@ header {
       background-size: cover;
       border: 2px solid rgb(56, 56, 56);
       
-      /* Rounded corners */
-      -moz-border-radius: 0.2em;
-      -webkit-border-radius: 0.2em;
-      border-radius: 0.2em; /* future proofing */
-      -khtml-border-radius: 0.2em; /* for old Konqueror browsers */
+      @include round-corners;
     }
     
     .btn {
+      @include button-general
+      
       border: none;
       font-size: 1.05em;
       font-weight: 300;
       display: block;
-      
-      /* Rounded corners */
-      -moz-border-radius: 1em;
-      -webkit-border-radius: 1em;
-      border-radius: 1em; /* future proofing */
-      -khtml-border-radius: 1em; /* for old Konqueror browsers */
     }
     
     .btn-github {

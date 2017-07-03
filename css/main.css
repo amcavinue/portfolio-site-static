@@ -200,16 +200,19 @@ header {
     padding: 3em 0 2em 0;
     background-image: linear-gradient(180deg, transparent, rgba(52, 61, 69, 0.6), rgba(20, 24, 27, 0.9)); }
     .work-samples .show-more .button {
+      /* Rounded corners */
+      -moz-border-radius: 1em;
+      -webkit-border-radius: 1em;
+      border-radius: 1em;
+      /* future proofing */
+      -khtml-border-radius: 1em;
+      /* for old Konqueror browsers */
       color: #414850;
-      background-color: #fff;
+      background-color: #9dffeb;
       opacity: 0.8;
       font-weight: 700;
       padding: 0.5em 1em;
-      text-decoration: none;
-      -moz-border-radius: 0.2em;
-      -webkit-border-radius: 0.2em;
-      border-radius: 0.2em;
-      -khtml-border-radius: 0.2em; }
+      text-decoration: none; }
       .work-samples .show-more .button:hover {
         opacity: 1; }
   .work-samples h2 {
@@ -245,17 +248,17 @@ header {
       -khtml-border-radius: 0.2em;
       /* for old Konqueror browsers */ }
     .work-samples .project .btn {
-      border: none;
-      font-size: 1.05em;
-      font-weight: 300;
-      display: block;
       /* Rounded corners */
       -moz-border-radius: 1em;
       -webkit-border-radius: 1em;
       border-radius: 1em;
       /* future proofing */
       -khtml-border-radius: 1em;
-      /* for old Konqueror browsers */ }
+      /* for old Konqueror browsers */
+      border: none;
+      font-size: 1.05em;
+      font-weight: 300;
+      display: block; }
     .work-samples .project .btn-github {
       background-color: transparent;
       margin-bottom: 0.5em;

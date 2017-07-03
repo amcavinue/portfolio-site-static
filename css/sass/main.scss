@@ -15,6 +15,14 @@ $color-4: #562c2c; // Dark red
   -khtml-border-radius: 0.2em; /* for old Konqueror browsers */
 }
 
+@mixin button-general {
+  /* Rounded corners */
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  border-radius: 1em; /* future proofing */
+  -khtml-border-radius: 1em; /* for old Konqueror browsers */
+}
+
 * {
   margin: 0;
   padding: 0;
