@@ -1,24 +1,226 @@
 [
   {
-    "name": "Great Title",
-    "filename": "art-1",
-    "src": "content/art/art-1.jpg",
-    "media": "Digital Mixed Media",
+    "name": "Still Life",
+    "filename": "still-life.jpg",
+    "src": "content/art/2017/still-life.jpg",
+    "media": "Digital mixed media",
     "year": "2017",
-    "other": "fetus"
+    "other": ""
   },
   {
-    "name": "Great Title 2",
-    "filename": "art-2",
-    "src": "content/art/art-2.jpg",
-    "media": "",
-    "year": "2017"
+    "name": "Snake",
+    "filename": "snake.jpg",
+    "src": "content/art/2017/snake.jpg",
+    "media": "Digital mixed media",
+    "year": "2017",
+    "other": ""
   },
   {
-    "name": "Great Title 3",
-    "filename": "art-3",
-    "src": "content/art/art-3.jpg",
-    "media": "Digital Mixed Media",
-    "year": ""
+    "name": "Kiss",
+    "filename": "kiss.jpg",
+    "src": "content/art/2017/kiss.jpg",
+    "media": "Digital mixed media",
+    "year": "2017",
+    "other": ""
+  },
+  {
+    "name": "Jewels",
+    "filename": "jewels.jpg",
+    "src": "content/art/2017/jewels.jpg",
+    "media": "Digital mixed media",
+    "year": "2017",
+    "other": ""
+  },
+  {
+    "name": "Your Face When You See a Bunch of Delicious Fruit",
+    "filename": "delicious-fruit.jpg",
+    "src": "content/art/2017/delicious-fruit.jpg",
+    "media": "Digital mixed media",
+    "year": "2017",
+    "other": ""
+  },
+  {
+    "name": "Androgeny",
+    "filename": "androgeny.jpg",
+    "src": "content/art/2017/androgeny.jpg",
+    "media": "Digital mixed media",
+    "year": "2017",
+    "other": ""
+  },
+  {
+    "name": "Alien",
+    "filename": "alien.jpg",
+    "src": "content/art/2017/alien.jpg",
+    "media": "Digital mixed media",
+    "year": "2017",
+    "other": ""
+  },
+  {
+    "name": "Mudskipper",
+    "filename": "mudskipper-fin.jpg",
+    "src": "content/art/2016/mudskipper-fin.jpg",
+    "media": "Digital Painting",
+    "year": "2016",
+    "other": ""
+  },
+  {
+    "name": "Logo",
+    "filename": "am-logo.jpg",
+    "src": "content/art/2016/am-logo.jpg",
+    "media": "Digital Art",
+    "year": "2016",
+    "other": ""
+  },
+  {
+    "name": "Worms in Mouth with Bad Hygiene",
+    "filename": "worms-in-mouth-with-bad-hygiene.jpg",
+    "src": "content/art/2015/worms-in-mouth-with-bad-hygiene.jpg",
+    "media": "Digital Painting",
+    "year": "2015",
+    "other": ""
+  },
+  {
+    "name": "It's What's on the Inside that Counts",
+    "filename": "its-whats-on-the-inside-that-counts.jpg",
+    "src": "content/art/2015/its-whats-on-the-inside-that-counts.jpg",
+    "media": "Oil paint on canvas",
+    "year": "2015",
+    "other": ""
+  },
+  {
+    "name": "Devil",
+    "filename": "14Devil.jpg",
+    "src": "content/art/2013/14Devil.jpg",
+    "media": "Oil paint on epoxy on canvas",
+    "year": "2013",
+    "other": "Fetus"
+  },
+  {
+    "name": "Cherub",
+    "filename": "12Cherub.jpg",
+    "src": "content/art/2013/12Cherub.jpg",
+    "media": "Oil paint on epoxy on canvas",
+    "year": "2013",
+    "other": "Fetus"
+  },
+  {
+    "name": "Ghost",
+    "filename": "10Ghost.jpg",
+    "src": "content/art/2013/10Ghost.jpg",
+    "media": "Oil paint on epoxy on canvas",
+    "year": "2013",
+    "other": "Fetus"
+  },
+  {
+    "name": "The Zombie Detail",
+    "filename": "9TheZombieDetail.jpg",
+    "src": "content/art/2013/9TheZombieDetail.jpg",
+    "media": "Oil paint on epoxy on canvas",
+    "year": "2013",
+    "other": "Fetus"
+  },
+  {
+    "name": "The Zombie",
+    "filename": "9TheZombie.jpg",
+    "src": "content/art/2013/9TheZombieDetail.jpg",
+    "media": "Oil paint on epoxy on canvas",
+    "year": "2013",
+    "other": "Fetus"
+  },
+  {
+    "name": "Living",
+    "filename": "7Living.jpg",
+    "src": "content/art/2013/7Living.jpg",
+    "media": "Oil paint on epoxy on canvas",
+    "year": "2013",
+    "other": "Fetus"
+  },
+  {
+    "name": "Little Angel",
+    "filename": "6LittleAngel.jpg",
+    "src": "content/art/2013/6LittleAngel.jpg",
+    "media": "Oil paint on epoxy on canvas",
+    "year": "2013",
+    "other": "Fetus"
+  },
+  {
+    "name": "Fairy",
+    "filename": "5Fairy.jpg",
+    "src": "content/art/2013/5Fairy.jpg",
+    "media": "Oil paint on epoxy on canvas",
+    "year": "2013",
+    "other": "Fetus"
+  },
+  {
+    "name": "Alive",
+    "filename": "3Alive.jpg",
+    "src": "content/art/2013/3Alive.jpg",
+    "media": "Oil paint on epoxy on canvas",
+    "year": "2013",
+    "other": "Fetus"
+  },
+  {
+    "name": "Untitled Detail",
+    "filename": "2UntitledDetail.jpg",
+    "src": "content/art/2013/2UntitledDetail.jpg",
+    "media": "Oil paint on epoxy on canvas",
+    "year": "2013",
+    "other": "Fetus"
+  },
+  {
+    "name": "Untitled",
+    "filename": "1Untitled.jpg",
+    "src": "content/art/2013/1Untitled.jpg",
+    "media": "Oil paint on epoxy on canvas",
+    "year": "2013",
+    "other": "Fetus"
+  },
+  {
+    "name": "Carousel Mural",
+    "filename": "1Carousel.jpg",
+    "src": "content/art/2012/1Carousel.jpg",
+    "media": "Latex paint on canvas",
+    "year": "2012",
+    "other": ""
+  },
+  {
+    "name": "Falling Boxer",
+    "filename": "2Boxer.jpg",
+    "src": "content/art/2012/2Boxer.jpg",
+    "media": "Latex paint on canvas",
+    "year": "2012",
+    "other": ""
+  },
+  {
+    "name": "Cabaret Girl",
+    "filename": "3Cabaret.jpg",
+    "src": "content/art/2012/3Cabaret.jpg",
+    "media": "Latex paint on canvas",
+    "year": "2012",
+    "other": ""
+  },
+  {
+    "name": "Bananas",
+    "filename": "4Bananas.jpg",
+    "src": "content/art/2012/4Bananas.jpg",
+    "media": "Latex paint on canvas",
+    "year": "2012",
+    "other": ""
+  },
+  {
+    "name": "In Over Your Head",
+    "filename": "5Head.jpg",
+    "src": "content/art/2012/5Head.jpg",
+    "media": "Digital painting",
+    "year": "2012",
+    "other": ""
+  },
+  {
+    "name": "The Dreamer",
+    "filename": "6Dreamer.jpg",
+    "src": "content/art/2012/6Dreamer.jpg",
+    "media": "Acrylic paint on canvas",
+    "year": "2012",
+    "other": ""
   }
 ]
