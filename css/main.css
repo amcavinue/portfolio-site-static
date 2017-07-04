@@ -141,7 +141,8 @@ header {
           text-align: center;
           color: #130101; }
         #services .row .service-item-container .service-item hr {
-          margin: 1em auto; }
+          margin: 1em auto;
+          border: 1px solid #7d7d7d; }
         #services .row .service-item-container .service-item .img-container {
           height: 6em;
           width: 6em;
