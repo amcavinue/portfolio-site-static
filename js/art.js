@@ -6,7 +6,7 @@ function renderImages(images) {
         '<div class="card-container">' +
           '<div class="img-container col-md-9" data-description="' + image.filename + '">' +
             '<span class="img-helper"></span>' +
-            '<img src="' + image.src + '">' +
+            '<img src="loading.gif" data-src="' + image.src + '">' +
           '</div>' +
           '<h4>' + image.name + '</h4>' +
           (image.media ? '<span>' + image.media + '</span>' : '') +
@@ -51,6 +51,9 @@ $(function() {
   $.getJSON("art-data.json", function(json) {
     imageData = json;
     $('#js-render-images').append(renderImages(json));
+    
+    // Start the lazy-loading plugin.
+    $("img").unveil();
   });
 
   // Toggle the filters form.
