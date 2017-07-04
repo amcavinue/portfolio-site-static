@@ -51,8 +51,6 @@ $(function() {
   $.getJSON("art-data.json", function(json) {
     imageData = json;
     $('#js-render-images').append(renderImages(json));
-    
-    // Start the lazy-loading plugin.
     $("img").unveil();
   });
 
@@ -96,8 +94,10 @@ $(function() {
 
     if (results.length !== 0) {
       $('#js-render-images').empty().append(renderImages(results));
+      $("img").unveil();
     } else {
       $('#js-render-images').empty().append(renderImages(imageData));
+      $("img").unveil();
     }
   });
   
@@ -106,5 +106,6 @@ $(function() {
     $('.tag-list :checked').prop('checked', false);
     $('#contains').val('');
     $('#js-render-images').empty().append(renderImages(imageData));
+    $("img").unveil();
   });
 });
