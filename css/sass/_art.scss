@@ -44,6 +44,8 @@
           input {
             color: $color-1;
             border: none;
+            padding: 0.25em 0.5em;
+            margin-left: 0.5em;
             @include round-corners;
           }
         }  

@@ -342,6 +342,8 @@ header {
         #art-intro #filter-form fieldset .form-group input {
           color: #3c0404;
           border: none;
+          padding: 0.25em 0.5em;
+          margin-left: 0.5em;
           /* Rounded corners */
           -moz-border-radius: 0.2em;
           -webkit-border-radius: 0.2em;
