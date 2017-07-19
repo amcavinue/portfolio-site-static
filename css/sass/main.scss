@@ -6,6 +6,8 @@ $color-1: #3c0404; // Black
 $color-2: #612323; // Black-red (Off-black)
 $color-3: #fff;    // White
 $color-4: #562c2c; // Dark red
+$color-5: #81acff; // Blue
+$color-6: #0a82a7; // Teal-blue
 
 @mixin round-corners {
   /* Rounded corners */
@@ -55,63 +57,20 @@ strong {
   text-decoration: underline;
 }
 
+b {
+  font-weight: 500;
+}
+
 hr {
   width: 20%;
 }
 
+.btn {
+  -moz-border-radius: 2em;
+  -webkit-border-radius: 2em;
+  border-radius: 2em; /* future proofing */
+  -khtml-border-radius: 2em; /* for old Konqueror browsers */
+}
+
 @import "development";
 @import "art";
-
-@media (max-width: 950px) {
-  h1 {
-    font-size: 2.25em;
-  }
-  
-  header {
-    .name {
-      h1 {
-        display: block;
-      }
-      
-      h4 {
-        display: block;
-      }
-    }
-    
-    .other-site {
-      display: block;
-      float: none;
-    }
-    
-    .social {
-      display: block;
-      float: none;
-      position: static;
-      margin-left: 0;
-    }
-  }
-  
-  #intro {
-    padding: 3em 1em;
-    background-size: initial;
-    
-    .what-i-do {
-      padding: 0;
-    }
-  }
-}
-
-@media (max-width: 500px) {
-  h1 {
-    font-size: 1.75em;
-  }
-  
-  #intro {
-    padding: 1em;
-    background-size: initial;
-    
-    .what-i-do {
-      padding: 0;
-    }
-  }
-}

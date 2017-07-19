@@ -61,7 +61,7 @@ header {
   }
   
   .other-site {
-    color: rgb(129, 172, 255);
+    color: $color-5;
     font-weight: bold;
     font-size: 1em;
     float: right;
@@ -154,7 +154,7 @@ header {
           height: 6em;
           width: 6em;
           text-align: center;
-          border: 3px #0a82a7 solid;
+          border: 3px $color-6 solid;
           padding: 1.5em;
           border-radius: 50%;
           margin: 0 auto;
@@ -309,6 +309,7 @@ header {
     .btn-site {
       background-color: transparent;
       border: #efe3e3 solid 1px;
+      margin-bottom: 0.5em;
       
       &:hover {
         background-color: #fff;
@@ -328,7 +329,7 @@ header {
   }
   
   .email {
-    color: rgb(129, 172, 255);
+    color: $color-5;
     font-size: 1.2em;
     font-weight: bold;
   }
@@ -357,4 +358,58 @@ header {
 
 .img-6 {
   background-image: url('/content/development/rfl-1.jpg');
+}
+
+@media (max-width: 950px) {
+  h1 {
+    font-size: 2.25em;
+  }
+  
+  header {
+    .name {
+      h1 {
+        display: block;
+      }
+      
+      h4 {
+        display: block;
+      }
+    }
+    
+    .other-site {
+      display: block;
+      float: none;
+    }
+    
+    .social {
+      display: block;
+      float: none;
+      position: static;
+      margin-left: 0;
+    }
+  }
+  
+  #intro {
+    padding: 3em 1em;
+    background-size: initial;
+    
+    .what-i-do {
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.75em;
+  }
+  
+  #intro {
+    padding: 1em;
+    background-size: initial;
+    
+    .what-i-do {
+      padding: 0;
+    }
+  }
 }
