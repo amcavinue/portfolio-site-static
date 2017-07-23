@@ -223,6 +223,19 @@ header {
   }
 }
 
+/* Override bootstrap styles. */
+.glyphicon-chevron-right:before,
+.glyphicon-chevron-left:before {
+  background-color: #8f9294;
+  padding: 0.25em 0.35em;
+  border-radius: 50%;
+  color: #f1f5f7;
+}
+
+#testimonials #testimonials-carousel .carousel-control .glyphicon-chevron-right {
+  margin-right: 0.25em;
+}
+
 .work-samples {
   list-style-type: none;
   overflow: hidden;
