@@ -1,3 +1,5 @@
+/* Accent colors */
+/* Greyscale */
 * {
   margin: 0;
   padding: 0; }
@@ -8,7 +10,7 @@ body {
   font-weight: 300;
   font-family: "Lato", sans-serif;
   line-height: 1.5em;
-  color: #3c0404;
+  color: #383838;
   background-color: #74a5c8;
   background-attachment: fixed;
   background-position: center;
@@ -58,7 +60,7 @@ h2, h3 {
 
 header {
   width: 100%;
-  background-color: #F2F6F9;
+  background-color: #f1f5f7;
   padding: 0.5em;
   text-align: left; }
   header .name {
@@ -79,11 +81,11 @@ header {
     margin-left: 1em; }
     header .social a {
       font-size: 1.5em;
-      color: #3c0404;
+      color: #383838;
       text-decoration: none;
       padding-right: 0.25em; }
       header .social a:hover {
-        color: #923232; }
+        color: #ab3939; }
   header .other-site {
     color: #81acff;
     font-weight: bold;
@@ -137,8 +139,9 @@ header {
         text-align: left;
         margin-bottom: 0.5em;
         padding: 1em 0.5em;
-        background: #f7f8f8;
+        background: #fff;
         box-shadow: 0 0.2em 0.2em rgba(51, 45, 45, 0.5);
+        /* TODO: Abstract this. */
         height: 100%;
         color: #130101;
         /* Rounded corners */
@@ -152,8 +155,9 @@ header {
           text-align: center;
           color: #130101; }
         #services .row .service-item-container .service-item hr {
+          /* TODO: Abstract this. */
           margin: 1em auto;
-          border: 1px solid #7d7d7d; }
+          border: 1px solid rgba(51, 45, 45, 0.5); }
         #services .row .service-item-container .service-item .img-container {
           height: 6em;
           width: 6em;
@@ -194,7 +198,7 @@ header {
       #testimonials #testimonials-carousel .carousel-caption h4 {
         margin-top: 0.5em; }
     #testimonials #testimonials-carousel .carousel-control {
-      color: #3c0404;
+      color: #383838;
       background-image: none;
       width: 5%;
       text-shadow: none; }
@@ -204,7 +208,7 @@ header {
 /* Override bootstrap styles. */
 .glyphicon-chevron-right:before,
 .glyphicon-chevron-left:before {
-  background-color: #8f9294;
+  background-color: rgba(51, 45, 45, 0.5);
   padding: 0.25em 0.35em;
   border-radius: 50%;
   color: #f1f5f7; }
@@ -233,7 +237,7 @@ header {
       /* future proofing */
       -khtml-border-radius: 1em;
       /* for old Konqueror browsers */
-      color: #414850;
+      color: #383838;
       background-color: #9dffeb;
       opacity: 0.8;
       font-weight: 700;
@@ -292,14 +296,14 @@ header {
       color: #9dffeb; }
       .work-samples .project .btn-github:hover {
         background-color: #9dffeb;
-        color: #3c0404; }
+        color: #383838; }
     .work-samples .project .btn-site {
       background-color: transparent;
-      border: #efe3e3 solid 1px;
+      border: #fff solid 1px;
       margin-bottom: 0.5em; }
       .work-samples .project .btn-site:hover {
         background-color: #fff;
-        color: #3c0404; }
+        color: #383838; }
 
 .contact {
   background-color: rgba(39, 39, 39, 0.8);
@@ -375,7 +379,7 @@ header {
   font-weight: 300;
   font-family: "Lato", sans-serif;
   line-height: 1.5em;
-  color: #3c0404;
+  color: #383838;
   background: #fafafb;
   overflow-x: hidden; }
 
@@ -393,7 +397,7 @@ header {
       #art-intro #filter-form fieldset .form-group {
         margin-bottom: 1em; }
         #art-intro #filter-form fieldset .form-group input {
-          color: #3c0404;
+          color: #383838;
           border: none;
           padding: 0.25em 0.5em;
           margin-left: 0.5em;
@@ -433,7 +437,7 @@ header {
       display: inline;
       list-style-type: none;
       padding-right: 1em;
-      color: #3c0404; }
+      color: #383838; }
       #art-intro .tag-list-container li .checkbox {
         display: inline;
         visibility: hidden;

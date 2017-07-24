@@ -1,13 +1,21 @@
 $font-1: 'Questrial', sans-serif;
 $font-2: 'Lato', sans-serif;
 
-$color-0: #130101; // Dark-black
-$color-1: #3c0404; // Black
-$color-2: #612323; // Black-red (Off-black)
-$color-3: #fff;    // White
-$color-4: #562c2c; // Dark red
-$color-5: #81acff; // Blue
+/* Accent colors */
+$color-8: #ab3939;
 $color-6: #0a82a7; // Teal-blue
+$color-23: #9dffeb;
+$color-5: #81acff; // Blue
+
+/* Greyscale */
+$color-0: #130101; // Dark-black
+$color-22: rgb(56, 56, 56);
+$color-10: rgba(39, 39, 39, 0.8);
+$color-20: rgba(51, 45, 45, 0.75);
+$color-12: rgba(51, 45, 45, 0.5);
+$color-13: rgb(206, 212, 216);
+$color-7: #f1f5f7;
+$color-3: #fff;    // White
 
 @mixin round-corners {
   /* Rounded corners */
@@ -36,7 +44,7 @@ body {
   font-weight: 300;
   font-family: $font-2;
   line-height: 1.5em;
-  color: $color-1;
+  color: $color-22;
   background-color: #74a5c8;
   background-attachment: fixed;
   background-position: center;
