@@ -77,7 +77,7 @@ header {
     float: right;
     white-space: nowrap;
     position: relative;
-    top: 0.25em;
+    top: 0.5em;
     margin-left: 1em; }
     header .social a {
       font-size: 1.5em;
@@ -91,7 +91,9 @@ header {
     font-weight: bold;
     font-size: 1em;
     float: right;
-    margin-top: 0.3em; }
+    margin-top: 0.3em;
+    position: relative;
+    top: 0.25em; }
     header .other-site:hover {
       color: #81acff;
       text-decoration: underline; }
