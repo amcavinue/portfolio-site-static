@@ -72,6 +72,22 @@
     "other": ""
   },
   {
+    "name": "Untitled",
+    "filename": "living room.jpg",
+    "src": "content/art/2016/living room.jpg",
+    "media": "Digital Art",
+    "year": "2016",
+    "other": ""
+  },
+  {
+    "name": "Worms Paintover",
+    "filename": "worms painting.jpg",
+    "src": "content/art/2016/worms painting.jpg",
+    "media": "Digital Art",
+    "year": "2016",
+    "other": ""
+  },
+  {
     "name": "Worms in Mouth with Bad Hygiene",
     "filename": "worms-in-mouth-with-bad-hygiene.jpg",
     "src": "content/art/2015/worms-in-mouth-with-bad-hygiene.jpg",
@@ -122,7 +138,7 @@
   {
     "name": "The Zombie",
     "filename": "9TheZombie.jpg",
-    "src": "content/art/2013/9TheZombieDetail.jpg",
+    "src": "content/art/2013/9TheZombie.jpg",
     "media": "Oil paint on epoxy on canvas",
     "year": "2013",
     "other": "Fetus"
