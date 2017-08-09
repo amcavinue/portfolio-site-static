@@ -126,6 +126,23 @@ header {
     #intro .what-i-do #blurb {
       text-align: left;
       font-size: 0.8em; }
+    #intro .what-i-do .btn-cta {
+      /* Rounded corners */
+      -moz-border-radius: 1em;
+      -webkit-border-radius: 1em;
+      border-radius: 1em;
+      /* future proofing */
+      -khtml-border-radius: 1em;
+      /* for old Konqueror browsers */
+      border: none;
+      font-weight: 300;
+      color: #fff;
+      margin: 1em 0;
+      font-size: 0.75em;
+      background-color: #0a82a7;
+      outline: none; }
+      #intro .what-i-do .btn-cta:hover {
+        background-color: #19abd8; }
 
 #services {
   padding: 0.5em 1em;
