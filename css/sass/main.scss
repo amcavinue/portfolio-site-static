@@ -33,6 +33,10 @@ $color-3: #fff;    // White
   -webkit-border-radius: 1em;
   border-radius: 1em; /* future proofing */
   -khtml-border-radius: 1em; /* for old Konqueror browsers */
+  
+  &:active {
+    transform: scale(0.95);
+  }
 }
 
 * {

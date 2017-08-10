@@ -141,6 +141,8 @@ header {
       font-size: 0.75em;
       background-color: #ab3939;
       outline: none; }
+      #intro .what-i-do .btn-cta:active {
+        transform: scale(0.95); }
       #intro .what-i-do .btn-cta:hover {
         background-color: #f15b5b; }
 
@@ -223,6 +225,8 @@ header {
       text-shadow: none; }
       #testimonials #testimonials-carousel .carousel-control .glyphicon-chevron-left, #testimonials #testimonials-carousel .carousel-control .glyphicon-chevron-right {
         top: 30%; }
+      #testimonials #testimonials-carousel .carousel-control:active {
+        transform: scale(0.95); }
 
 /* Override bootstrap styles. */
 .glyphicon-chevron-right:before,
@@ -258,7 +262,10 @@ header {
       opacity: 0.8;
       font-weight: 700;
       padding: 0.5em 1em;
-      text-decoration: none; }
+      text-decoration: none;
+      display: inline-block; }
+      .work-samples .show-more .button:active {
+        transform: scale(0.95); }
       .work-samples .show-more .button:hover {
         opacity: 1; }
   .work-samples h2 {
@@ -305,6 +312,8 @@ header {
       font-size: 1.05em;
       font-weight: 300;
       display: block; }
+      .work-samples .project .btn:active {
+        transform: scale(0.95); }
     .work-samples .project .btn-github {
       background-color: transparent;
       margin-bottom: 0.5em;

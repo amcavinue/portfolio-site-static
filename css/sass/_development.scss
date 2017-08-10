@@ -237,6 +237,10 @@ header {
       .glyphicon-chevron-left, .glyphicon-chevron-right {
         top: 30%;
       }
+      
+      &:active {
+        transform: scale(0.95);
+      }
     }
   }
 }
@@ -274,6 +278,7 @@ header {
       font-weight: 700;
       padding: 0.5em 1em;
       text-decoration: none;
+      display: inline-block;
       
       &:hover {
         opacity: 1;
