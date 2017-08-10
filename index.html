@@ -307,7 +307,6 @@
     var maxHeight = -1;
        $('.item').each(function() {
          maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
-         console.log(maxHeight, $(this).height());
        });
     
        $('.item').each(function() {
@@ -341,8 +340,10 @@
 		// prevent jump-down
 		return false;
 	});
-	
-	carouselHeightMatch();
+  });
+  
+  $(window).on("load", function() {
+    carouselHeightMatch();
 	$(window).on('resize', function() {
 	    $('.item').removeAttr("style");
 	    carouselHeightMatch();
