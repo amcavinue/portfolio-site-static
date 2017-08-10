@@ -302,34 +302,53 @@
         el.animate({"width":width,"height":height}, speed, callback);
     });
   }
+  
+  function carouselHeightMatch() {
+    var maxHeight = -1;
+       $('.item').each(function() {
+         maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+         console.log(maxHeight, $(this).height());
+       });
+    
+       $('.item').each(function() {
+         $(this).height(maxHeight);
+       });
+  }
 
   /* Show more fade: https://css-tricks.com/text-fade-read-more/ */
   $(function() {
-			var heightIncrement = 765,
-			    currHeight = 765;
-			    
-	    $('.work-samples').css({'height' : currHeight});
-			
-			$('.work-samples .button').click(function() {
-			  var scrollHeight = $('.work-samples')[0].scrollHeight;
-				
-				if (currHeight + heightIncrement < scrollHeight) {
-				  currHeight += heightIncrement;
-				  $('.work-samples')
-					.animate({
-						'height': currHeight
-					}, 500);
-				} else {
-				  $('.work-samples').animateAuto('height', 500, function() {
-				    $('.work-samples').css('height', 'auto');
-				  });
-				  $('.show-more').fadeOut();
-				}
-				
-				// prevent jump-down
-				return false;
-			});
-		});
+	var heightIncrement = 765,
+	    currHeight = 765;
+		    
+    $('.work-samples').css({'height' : currHeight});
+		
+	$('.work-samples .button').click(function() {
+	  var scrollHeight = $('.work-samples')[0].scrollHeight;
+		
+		if (currHeight + heightIncrement < scrollHeight) {
+		  currHeight += heightIncrement;
+		  $('.work-samples')
+			.animate({
+				'height': currHeight
+			}, 500);
+		} else {
+		  $('.work-samples').animateAuto('height', 500, function() {
+		    $('.work-samples').css('height', 'auto');
+		  });
+		  $('.show-more').fadeOut();
+		}
+		
+		// prevent jump-down
+		return false;
+	});
+	
+	carouselHeightMatch();
+	$(window).on('resize', function() {
+	    $('.item').removeAttr("style");
+	    carouselHeightMatch();
+	});
+  });
+	
 </script>
 </body>
 </html>
