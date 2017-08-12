@@ -92,6 +92,10 @@ header {
     font-weight: 700;
   }
   
+  #enterprise-app {
+    max-width: 100%;
+  }
+  
   hr {
     margin-left: auto;
     margin-right: auto;
@@ -434,7 +438,6 @@ header {
   
   #intro {
     padding: 3em 1em;
-    background-size: initial;
     
     .what-i-do {
       padding: 0;
@@ -449,7 +452,6 @@ header {
   
   #intro {
     padding: 1em;
-    background-size: initial;
     
     .what-i-do {
       padding: 0;

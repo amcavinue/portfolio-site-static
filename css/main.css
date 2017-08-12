@@ -111,6 +111,8 @@ header {
     text-align: center;
     color: #fff;
     font-weight: 700; }
+  #intro #enterprise-app {
+    max-width: 100%; }
   #intro hr {
     margin-left: auto;
     margin-right: auto; }
@@ -384,8 +386,7 @@ header {
     position: static;
     margin-left: 0; }
   #intro {
-    padding: 3em 1em;
-    background-size: initial; }
+    padding: 3em 1em; }
     #intro .what-i-do {
       padding: 0; } }
 
@@ -393,8 +394,7 @@ header {
   h1 {
     font-size: 1.75em; }
   #intro {
-    padding: 1em;
-    background-size: initial; }
+    padding: 1em; }
     #intro .what-i-do {
       padding: 0; } }
 
