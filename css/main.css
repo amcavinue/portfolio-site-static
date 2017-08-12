@@ -250,6 +250,13 @@ header {
     padding: 3em 0 2em 0;
     background-image: linear-gradient(180deg, transparent, rgba(52, 61, 69, 0.6), rgba(20, 24, 27, 0.9)); }
     .work-samples .show-more .button {
+      /* Rounded corners */
+      -moz-border-radius: 1em;
+      -webkit-border-radius: 1em;
+      border-radius: 1em;
+      /* future proofing */
+      -khtml-border-radius: 1em;
+      /* for old Konqueror browsers */
       moz-border-radius: 2em;
       -webkit-border-radius: 2em;
       border-radius: 2em;
@@ -261,6 +268,8 @@ header {
       padding: 0.5em 1em;
       text-decoration: none;
       display: inline-block; }
+      .work-samples .show-more .button:active {
+        transform: scale(0.95); }
       .work-samples .show-more .button:hover {
         opacity: 1; }
   .work-samples h2 {
@@ -331,6 +340,10 @@ header {
   color: #fff; }
   .contact h2 {
     color: #fff; }
+  .contact #portrait {
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 175px; }
   .contact .email {
     color: #81acff;
     font-size: 1.2em;
